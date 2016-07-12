@@ -2,15 +2,15 @@
 A LightDM Mock that is tightly based on the source C code of [Antergos](https://github.com/Antergos)' [lightdm-webkit2-greeter](https://github.com/Antergos/lightdm-webkit2-greeter). <font style="color:red">Please note that the deprecation errors are intrusive for a reason.</font>
 
 ##Usage:
- 1. Clone the repo
+ [1]. Clone the repo
 ````bash
 git clone git@github.com:CytoDev/LightDMMock.git
 ````
- 2. Include the file in your theme that needs mocking<br>
+ [2]. Include the file in your theme that needs mocking<br>
 ````html
 <script type="text/javascript" src="mock/LightDMMock.js"></script>
 ````
- 3. Create a new instance of LightDMMock
+ [3]. Create a new instance of LightDMMock
 ````javascript
 if(!("lightdm" in window)) {
     var LightDMMock = LightDMMock || {};
