@@ -11,7 +11,10 @@
  *   Include the file in your theme that needs mocking
  *     <script type="text/javascript" src="mock/LightDMMock.js"></script>
  *   Create a new instance of LightDMMock
- *     var lightdm = lightdm || new LightDMMock(autofill, timeout, autoGuest);
+ *     if(!("lightdm" in window)) {
+ *         var LightDMMock = LightDMMock || {};
+ *         window.lightdm = new LightDMMock(autofill, timeout, autoGuest);
+ *     }
  *
  * @param {boolean} autofill  [wether or not the arrays for users, languages,
  *                             layouts, and sessions need to be filled with mock

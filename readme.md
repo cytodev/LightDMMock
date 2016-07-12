@@ -12,7 +12,10 @@ git clone git@github.com:CytoDev/LightDMMock.git
 ````
  3. Create a new instance of LightDMMock
 ````javascript
-var lightdm = lightdm || new LightDMMock(autofill, timeout, autoGuest);
+if(!("lightdm" in window)) {
+    var LightDMMock = LightDMMock || {};
+    window.lightdm = new LightDMMock(autofill, timeout, autoGuest);
+}
 ````
 
 ##Parameters of LightDMMock()
