@@ -404,8 +404,8 @@ window.deprecationNotifier = function(type, deprecated, alternative) {
  * @throws {IncompatibleArgumentTypesException}
  */
 window.checkArguments = function(args, length, types) {
-    if(args.length -1 !== length)
-        throw new IncompatibleArgumentCountException(length, args.length -1);
+    if(args.length !== length)
+        throw new IncompatibleArgumentCountException(length, args.length);
 
     for(var i = 1; i <= types.length; i++) {
         if(typeof args[i] !== types[i-1])
