@@ -408,8 +408,8 @@ window.checkArguments = function(args, length, types) {
         throw new IncompatibleArgumentCountException(length, args.length);
 
     for(var i = 1; i <= types.length; i++) {
-        if(typeof args[i] !== types[i-1])
-            throw new IncompatibleArgumentTypesException(i, types[i-1], typeof args[i]);
+        if(typeof args[i-1] !== types[i-1])
+            throw new IncompatibleArgumentTypesException(i, types[i-1], typeof args[i-1]);
     }
 };
 
