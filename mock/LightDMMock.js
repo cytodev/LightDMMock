@@ -95,6 +95,7 @@ function LightDMMock(autofill, timeout, autoGuest) {
  * Deprecated method.
  */
 LightDMMock.prototype.cancel_timed_login = function() {
+    window.logCall("cancel_timed_login", arguments);
     window.deprecationNotifier("method", "lightdm.cancel_timed_login()", "lightdm.cancel_autologin()");
 };
 
@@ -103,6 +104,7 @@ LightDMMock.prototype.cancel_timed_login = function() {
  * lightdm.cancel_timed_login() has been deprecated.
  */
 LightDMMock.prototype.cancel_autologin = function() {
+    window.logCall("cancel_autologin", arguments);
     window.checkArguments(arguments, 0, []);
 
     this.autologin_user    = null;
@@ -114,6 +116,7 @@ LightDMMock.prototype.cancel_autologin = function() {
  * Deprecated method.
  */
 LightDMMock.prototype.start_authentication = function() {
+    window.logCall("start_authentication", arguments);
     window.deprecationNotifier("method", "lightdm.start_authentication()", "lightdm.authenticate(username)");
 };
 
@@ -126,6 +129,7 @@ LightDMMock.prototype.start_authentication = function() {
  * @param  {String} username [username to authenticate]
  */
 LightDMMock.prototype.authenticate = function(username) {
+    window.logCall("authenticate", arguments);
     window.checkArguments(arguments, 1, ["string"]);
 
     if(this.in_authentication) {
@@ -155,6 +159,7 @@ LightDMMock.prototype.authenticate = function(username) {
  * Authenticates as the guest user.
  */
 LightDMMock.prototype.authenticate_as_guest = function() {
+    window.logCall("authenticate_as_guest", arguments);
     window.checkArguments(arguments, 0, []);
 
     if(!this.has_guest_account)
@@ -178,6 +183,7 @@ LightDMMock.prototype.authenticate_as_guest = function() {
  * @param {String} text [the response to the challange, usually a password]
  */
 LightDMMock.prototype.respond = function(text) {
+    window.logCall("respond", arguments);
     window.checkArguments(arguments, 1, ["string"]);
 
     if(!this.in_authentication)
@@ -195,6 +201,7 @@ LightDMMock.prototype.respond = function(text) {
  * Deprecated method.
  */
 LightDMMock.prototype.provide_secret = function() {
+    window.logCall("provide_secret", arguments);
     window.deprecationNotifier("method", "lightdm.provide_secret(text)", "lightdm.respond(text)");
 };
 
@@ -203,6 +210,7 @@ LightDMMock.prototype.provide_secret = function() {
  * process of authenticating.
  */
 LightDMMock.prototype.cancel_authentication = function() {
+    window.logCall("cancel_authentication", arguments);
     window.checkArguments(arguments, 0, []);
 
     this.authentication_user = null;
@@ -213,6 +221,7 @@ LightDMMock.prototype.cancel_authentication = function() {
  * Suspends the system, if the greeter has the authority to do so.
  */
 LightDMMock.prototype.suspend = function() {
+    window.logCall("suspend", arguments);
     window.checkArguments(arguments, 0, []);
 
     if(!this.can_suspend)
@@ -226,6 +235,7 @@ LightDMMock.prototype.suspend = function() {
  * Hibernates the system, if the greeter has the authority to do so.
  */
 LightDMMock.prototype.hibernate = function() {
+    window.logCall("hibernate", arguments);
     window.checkArguments(arguments, 0, []);
 
     if(!this.can_hibernate)
@@ -239,6 +249,7 @@ LightDMMock.prototype.hibernate = function() {
  * Shuts down the system, if the greeter has the authority to do so.
  */
 LightDMMock.prototype.shutdown = function() {
+    window.logCall("shutdown", arguments);
     window.checkArguments(arguments, 0, []);
 
     if(!this.can_shutdown)
@@ -252,6 +263,7 @@ LightDMMock.prototype.shutdown = function() {
  * Restarts the system, if the greeter has the authority to do so.
  */
 LightDMMock.prototype.restart = function() {
+    window.logCall("restart", arguments);
     window.checkArguments(arguments, 0, []);
 
     if(!this.can_restart)
@@ -267,6 +279,7 @@ LightDMMock.prototype.restart = function() {
  * @param {String} lang [the language to change to]
  */
 LightDMMock.prototype.set_language = function(lang) {
+    window.logCall("set_language", arguments);
     window.checkArguments(arguments, 1, ["string"]);
 
     this.language = lang;
@@ -276,6 +289,7 @@ LightDMMock.prototype.set_language = function(lang) {
  * Deprecated method.
  */
 LightDMMock.prototype.login = function() {
+    window.logCall("login", arguments);
     window.deprecationNotifier("method", "lightdm.login()", "lightdm.start_session_sync(session)");
 };
 
@@ -289,6 +303,7 @@ LightDMMock.prototype.login = function() {
  * @param  {String} session [the session name to start]
  */
 LightDMMock.prototype.start_session_sync = function(session) {
+    window.logCall("start_session_sync", arguments);
     window.checkArguments(arguments, 1, ["string"]);
 
     if(!this.in_authentication)
@@ -306,6 +321,7 @@ LightDMMock.prototype.start_session_sync = function(session) {
  * @param  {String} hint_name [name of the hint to show]
  */
 LightDMMock.prototype.get_hint = function(hint_name) {
+    window.logCall("get_hint", arguments);
     window.checkArguments(arguments, 1, ["string"]);
 
     // @fixme: I have no clue how to simulate this...
@@ -411,6 +427,32 @@ window.checkArguments = function(args, length, types) {
         if(typeof args[i-1] !== types[i-1])
             throw new IncompatibleArgumentTypesException(i, types[i-1], typeof args[i-1]);
     }
+};
+
+/**
+ * global helper logCall
+ *     logs a function call with the arguments provided to help with debugging a
+ *     lightdm js script.
+ *
+ * @param  {String} name [called function name]
+ * @param  {Array}  args [called function arguments]
+ *
+ * @return {window.console.info}
+ */
+window.logCall = function(name, args) {
+    var argv = [];
+
+    if(args !== undefined && args.length !== 0) {
+        for(var i = 0; i <= args.length; i++) {
+            if(args[i] !== undefined)
+                argv.push({type: typeof args[i], value: args[i]});
+        }
+    }
+
+    if(argv.length > 0)
+        return window.console.info("[lightdm." + name + "] called with " + argv.length + " argument(s)", argv);
+
+    return window.console.info("[lightdm." + name + "] called with 0 arguments");
 };
 
 
