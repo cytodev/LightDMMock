@@ -29,6 +29,8 @@
 "use strict";
 
 function LightDMMock(autofill, timeout, autoGuest) {
+    window.checkForUpdate("v1.0.0");
+
     this.hostname            = null;
     this.users               = null;
     this.default_language    = null;
@@ -454,6 +456,37 @@ window.logCall = function(name, args) {
         return window.console.info("[lightdm." + name + "] called with " + argv.length + " argument(s)", argv);
 
     return window.console.info("[lightdm." + name + "] called with 0 arguments");
+};
+
+window.checkForUpdate = function(currentVersion) {
+    var request = new XMLHttpRequest();
+
+    request.onreadystatechange = function() {
+        if(request.readyState === XMLHttpRequest.DONE) {
+            switch(request.status) {
+                case 200:
+                    try {
+                        var latest = JSON.parse(request.responseText).tag_name;
+
+                        if(currentVersion !== latest) {
+                            window.console.warn("You are using an outdated version of LightDMMock. Please download the new version from https://github.com/CytoDev/LightDMMock/releases/" + latest);
+                        }
+                    } catch(e) {
+                        window.console.error(e.toString());
+                        window.console.warn("Could not check for new version of LightDMMock. Please check for a new version manually by visiting https://github.com/CytoDev/LightDMMock/releases/latest");
+                    }
+                    break;
+                case 404:
+                    window.console.warn("Could not check for new version of LightDMMock. Please check for a new version manually by visiting https://github.com/CytoDev/LightDMMock/releases/latest");
+                    break;
+                default:
+                    break;
+            }
+        }
+    };
+
+    request.open("GET", "https://api.github.com/repos/CytoDev/LightDMMock/releases/latest", true);
+    request.send();
 };
 
 
