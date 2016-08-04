@@ -458,6 +458,13 @@ window.logCall = function(name, args) {
     return window.console.info("[lightdm." + name + "] called with 0 arguments");
 };
 
+/**
+ * global helper checkForUpdate
+ *     compares curentVersion with the tag name of GitHub's latest release and
+ *     prompts the user to download a new version if it is available.
+ *
+ * @param  {String} currentVersion [the current tag version]
+ */
 window.checkForUpdate = function(currentVersion) {
     var request = new XMLHttpRequest();
 
