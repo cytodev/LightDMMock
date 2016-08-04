@@ -139,8 +139,8 @@ LightDMMock.prototype.authenticate = function(username) {
 
     var exists = false;
 
-    for(var i = 0; i <= this.users.length; i++) {
-        if(this.users.name === username)
+    for(var i = 0; i <= this.users.length -1; i++) {
+        if(this.users[i].name === username)
             exists = true;
     }
 
