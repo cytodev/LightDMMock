@@ -86,7 +86,7 @@ function LightDMMock(autofill, timeout, autoGuest) {
 
         for(var i = 0; i <= this.users; i++) {
             this.users[i].logged_in = Boolean(Math.floor(Math.random() * 2));
-            this.users[i].session = this.sessions[Math.floor((Math.random() * this.sessions.length))].name;
+            this.users[i].session   = this.sessions[Math.floor((Math.random() * this.sessions.length))].name;
         }
     }
 }
@@ -313,6 +313,7 @@ LightDMMock.prototype.start_session_sync = function(session) {
         throw new IlligalUsageException("LightDM has no authenticated users to log in. Make sure to call 'lightdm.respond()' before calling this function.");
 
     window.alert("LightDM has started a " + session + " session for " + this.authentication_user);
+    document.location.reload(true);
 };
 
 /**
@@ -338,8 +339,8 @@ LightDMMock.prototype.get_hint = function(hint_name) {
  * @param {string} message [description of illigal usage]
  */
 function IlligalUsageException(message) {
-    this.name = "IlligalUsageException";
-    this.message = message;
+    this.name     = "IlligalUsageException";
+    this.message  = message;
     this.toString = function() {
         return "[" + this.name + "] " + this.message;
     };
@@ -353,8 +354,8 @@ function IlligalUsageException(message) {
  * @param  {String} alternative [alternative method or property to use]
  */
 function DeprecationException(type, deprecated, alternative) {
-    this.name = "DeprecationException";
-    this.message = "The " + type + " '" + deprecated + "' is deprecated. Consider using '" + alternative + "' instead.";
+    this.name     = "DeprecationException";
+    this.message  = "The " + type + " '" + deprecated + "' is deprecated. Consider using '" + alternative + "' instead.";
     this.toString = function() {
         return "[" + this.name + "] " + this.message;
     };
@@ -367,8 +368,8 @@ function DeprecationException(type, deprecated, alternative) {
  * @param  {Number} received [found length of arguments]
  */
 function IncompatibleArgumentCountException(expected, received) {
-    this.name = "IncompatibleArgumentCountException";
-    this.message = "Incorrect number of arguments in function call. Expected " + expected + ", found " + received;
+    this.name     = "IncompatibleArgumentCountException";
+    this.message  = "Incorrect number of arguments in function call. Expected " + expected + ", found " + received;
     this.toString = function() {
         return "[" + this.name + "] " + this.message;
     };
@@ -382,8 +383,8 @@ function IncompatibleArgumentCountException(expected, received) {
  * @param  {String} received [found type]
  */
 function IncompatibleArgumentTypesException(number, expected, received) {
-    this.name = "IncompatibleArgumentTypesException";
-    this.message = "Argument " + number + " is of a wrong type. Expected '" + expected + "', found '" + received + "'";
+    this.name     = "IncompatibleArgumentTypesException";
+    this.message  = "Argument " + number + " is of a wrong type. Expected '" + expected + "', found '" + received + "'";
     this.toString = function() {
         return "[" + this.name + "] " + this.message;
     };
