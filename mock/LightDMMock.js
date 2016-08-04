@@ -418,34 +418,58 @@ window.checkArguments = function(args, length, types) {
  *                             Object.watch  shim                             *
 *******************************************************************************/
 
-if(!Object.prototype.watch) {
-    Object.prototype.watch = function (prop, handler) {
-        var oldval = this[prop];
-        var newval;
-        var getter = function() {
-            return newval;
-        };
-        var setter = function(val) {
-            oldval = newval;
-            newval = handler.call(this, prop, oldval, val);
-            return newval;
-        };
+/*
+ * object.watch polyfill
+ *
+ * 2012-04-03
+ *
+ * By Eli Grey, http://eligrey.com
+ * Public Domain.
+ * NO WARRANTY EXPRESSED OR IMPLIED. USE AT YOUR OWN RISK.
+ */
 
-        if(delete this[prop]) {
-            Object.defineProperty(this, prop, {
-                get: getter,
-                set: setter
-            });
+// object.watch
+if (!Object.prototype.watch) {
+    Object.defineProperty(Object.prototype, "watch", {
+          enumerable: false,
+          configurable: true,
+          writable: false,
+          value: function(prop, handler) {
+            var oldval = this[prop],
+            newval = oldval,
+            getter = function () {
+                return newval;
+            },
+            setter = function (val) {
+                oldval = newval;
+                newval = handler.call(this, prop, oldval, val);
+                return newval;
+            };
+
+            if(delete this[prop]) { // can't watch constants
+                Object.defineProperty(this, prop, {
+                    get: getter,
+                    set: setter,
+                    enumerable: true,
+                    configurable: true
+                });
+            }
         }
-    };
+    });
 }
 
+// object.unwatch
 if(!Object.prototype.unwatch) {
-    Object.prototype.unwatch = function (prop) {
-        var val = this[prop];
-        delete this[prop];
-        this[prop] = val;
-    };
+    Object.defineProperty(Object.prototype, "unwatch", {
+        enumerable: false,
+        configurable: true,
+        writable: false,
+        value: function (prop) {
+            var val = this[prop];
+            delete this[prop]; // remove accessors
+            this[prop] = val;
+        }
+    });
 }
 
 LightDMMock.watch('default_language', function() {
