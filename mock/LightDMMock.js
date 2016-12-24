@@ -570,3 +570,4 @@ LightDMMock.watch('timed_login_user', function() {
 LightDMMock.watch('timed_login_delay', function() {
     window.deprecationNotifier("property", "timed_login_delay", "lightdm.autologin_timeout");
 });
+module.exports = LightDMMock;
