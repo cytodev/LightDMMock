@@ -504,11 +504,13 @@ window.checkForUpdate = function(currentVersion) {
             switch(request.status) {
                 case 200:
                     try {
-                        var latest = JSON.parse(request.responseText).tag_name;
+                        var latest;
 
-                        if(currentVersion !== latest) {
+                        if(request.responseText !== undefined)
+                            latest = JSON.parse(request.responseText).tag_name;
+
+                        if(currentVersion !== latest)
                             window.console.warn("You are using an outdated version of LightDMMock. Please download the new version from https://github.com/CytoDev/LightDMMock/releases/" + latest);
-                        }
                     } catch(e) {
                         window.console.error(e.toString());
                         window.console.warn("Could not check for new version of LightDMMock. Please check for a new version manually by visiting https://github.com/CytoDev/LightDMMock/releases/latest");
