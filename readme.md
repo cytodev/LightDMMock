@@ -19,7 +19,7 @@ if(!("lightdm" in window)) {
 ````
 
 ##Note:
-If you plan on using the `.face` files in the mock you have to include the path to `LightDMMock/src`. The `.face` files linked in `users.json` are absolute links to `/home/[username/.face`.
+If you plan on using the `.face` files in the mock you have to include the path to `LightDMMock/src`. The `.face` files linked in `users.json` are absolute links to `/home/[username]/.face`.
 
 ##Parameters of LightDMMock()
 ####autofill
