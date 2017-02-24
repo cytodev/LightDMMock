@@ -529,6 +529,33 @@ window.checkForUpdate = function(currentVersion) {
     request.send();
 };
 
+/**
+ * global helper loadJSON
+ *     Loads JSON from a path. Removes the need to b64 encode them in this file.
+ *
+ * @param  {String}   url      [path to JSON file]
+ * @param  {Function} callback [callback function]
+ */
+window.loadJSON = function(url, callback) {
+    var request = new XMLHttpRequest();
+
+    var onSuccess = function() {
+        this.callback.apply(request, request.arguments);
+    };
+
+    var onFailure = function() {
+        window.console.error(this.statusText);
+    };
+
+    request.callback  = callback;
+    request.arguments = Array.prototype.slice.call(arguments, 2);
+    request.onload    = onSuccess;
+    request.onerror   = onFailure;
+
+    request.open("get", url, true);
+    request.send(null);
+};
+
 
 /******************************************************************************
  *                             Object.watch  shim                             *
