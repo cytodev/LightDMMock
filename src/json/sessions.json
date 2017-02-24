@@ -1,0 +1,19 @@
+[
+    {
+        "key"     : "LXDE",
+        "name"    : "LXDE",
+        "comment" : "LXDE - Lightweight X11 desktop environment"
+    }, {
+        "key"     : "openbox",
+        "name"    : "Openbox",
+        "comment" : "Log in using the Openbox window manager (without a session manager)"
+    }, {
+        "key"     : "twm",
+        "name"    : "TWM",
+        "comment" : "The Tab Window Manager"
+    }, {
+        "key"     : "tinywm",
+        "name"    : "Tinywm",
+        "comment" : "Ridiculously tiny window manager"
+    }
+]

@@ -1,0 +1,1999 @@
+[
+    {
+        "name"              : "us",
+        "short_description" : "en",
+        "description"       : "English (US)"
+    }, {
+        "name"              : "us\tchr",
+        "short_description" : "chr",
+        "description"       : "Cherokee"
+    }, {
+        "name"              : "us\teuro",
+        "short_description" : "",
+        "description"       : "English (US, with euro on 5)"
+    }, {
+        "name"              : "us\tintl",
+        "short_description" : "",
+        "description"       : "English (US, international with dead keys)"
+    }, {
+        "name"              : "us\talt-intl",
+        "short_description" : "",
+        "description"       : "English (US, alternative international)"
+    }, {
+        "name"              : "us\tcolemak",
+        "short_description" : "",
+        "description"       : "English (Colemak)"
+    }, {
+        "name"              : "us\tdvorak",
+        "short_description" : "",
+        "description"       : "English (Dvorak)"
+    }, {
+        "name"              : "us\tdvorak-intl",
+        "short_description" : "",
+        "description"       : "English (Dvorak, international with dead keys)"
+    }, {
+        "name"              : "us\tdvorak-alt-intl",
+        "short_description" : "",
+        "description"       : "English (Dvorak alternative international no dead keys)"
+    }, {
+        "name"              : "us\tdvorak-l",
+        "short_description" : "",
+        "description"       : "English (left handed Dvorak)"
+    }, {
+        "name"              : "us\tdvorak-r",
+        "short_description" : "",
+        "description"       : "English (right handed Dvorak)"
+    }, {
+        "name"              : "us\tdvorak-classic",
+        "short_description" : "",
+        "description"       : "English (classic Dvorak)"
+    }, {
+        "name"              : "us\tdvp",
+        "short_description" : "",
+        "description"       : "English (programmer Dvorak)"
+    }, {
+        "name"              : "us\trus",
+        "short_description" : "ru",
+        "description"       : "Russian (US, phonetic)"
+    }, {
+        "name"              : "us\tmac",
+        "short_description" : "",
+        "description"       : "English (Macintosh)"
+    }, {
+        "name"              : "us\taltgr-intl",
+        "short_description" : "",
+        "description"       : "English (international AltGr dead keys)"
+    }, {
+        "name"              : "us\tolpc2",
+        "short_description" : "",
+        "description"       : "English (the divide/multiply keys toggle the layout)"
+    }, {
+        "name"              : "us\thbs",
+        "short_description" : "",
+        "description"       : "Serbo-Croatian (US)"
+    }, {
+        "name"              : "us\tworkman",
+        "short_description" : "",
+        "description"       : "English (Workman)"
+    }, {
+        "name"              : "us\tworkman-intl",
+        "short_description" : "",
+        "description"       : "English (Workman, international with dead keys)"
+    }, {
+        "name"              : "af",
+        "short_description" : "fa",
+        "description"       : "Afghani"
+    }, {
+        "name"              : "af\tps",
+        "short_description" : "ps",
+        "description"       : "Pashto"
+    }, {
+        "name"              : "af\tuz",
+        "short_description" : "uz",
+        "description"       : "Uzbek (Afghanistan)"
+    }, {
+        "name"              : "af\tolpc-ps",
+        "short_description" : "ps",
+        "description"       : "Pashto (Afghanistan, OLPC)"
+    }, {
+        "name"              : "af\tfa-olpc",
+        "short_description" : "fa",
+        "description"       : "Persian (Afghanistan, Dari OLPC)"
+    }, {
+        "name"              : "af\tuz-olpc",
+        "short_description" : "uz",
+        "description"       : "Uzbek (Afghanistan, OLPC)"
+    }, {
+        "name"              : "ara",
+        "short_description" : "ar",
+        "description"       : "Arabic"
+    }, {
+        "name"              : "ara\tazerty",
+        "short_description" : "",
+        "description"       : "Arabic (azerty)"
+    }, {
+        "name"              : "ara\tazerty_digits",
+        "short_description" : "",
+        "description"       : "Arabic (azerty/digits)"
+    }, {
+        "name"              : "ara\tdigits",
+        "short_description" : "",
+        "description"       : "Arabic (digits)"
+    }, {
+        "name"              : "ara\tqwerty",
+        "short_description" : "",
+        "description"       : "Arabic (qwerty)"
+    }, {
+        "name"              : "ara\tqwerty_digits",
+        "short_description" : "",
+        "description"       : "Arabic (qwerty/digits)"
+    }, {
+        "name"              : "ara\tbuckwalter",
+        "short_description" : "",
+        "description"       : "Arabic (Buckwalter)"
+    }, {
+        "name"              : "al",
+        "short_description" : "sq",
+        "description"       : "Albanian"
+    }, {
+        "name"              : "am",
+        "short_description" : "hy",
+        "description"       : "Armenian"
+    }, {
+        "name"              : "am\tphonetic",
+        "short_description" : "",
+        "description"       : "Armenian (phonetic)"
+    }, {
+        "name"              : "am\tphonetic-alt",
+        "short_description" : "",
+        "description"       : "Armenian (alternative phonetic)"
+    }, {
+        "name"              : "am\teastern",
+        "short_description" : "",
+        "description"       : "Armenian (eastern)"
+    }, {
+        "name"              : "am\twestern",
+        "short_description" : "",
+        "description"       : "Armenian (western)"
+    }, {
+        "name"              : "am\teastern-alt",
+        "short_description" : "",
+        "description"       : "Armenian (alternative eastern)"
+    }, {
+        "name"              : "at",
+        "short_description" : "de",
+        "description"       : "German (Austria)"
+    }, {
+        "name"              : "at\tnodeadkeys",
+        "short_description" : "",
+        "description"       : "German (Austria, eliminate dead keys)"
+    }, {
+        "name"              : "at\tsundeadkeys",
+        "short_description" : "",
+        "description"       : "German (Austria, Sun dead keys)"
+    }, {
+        "name"              : "at\tmac",
+        "short_description" : "",
+        "description"       : "German (Austria, Macintosh)"
+    }, {
+        "name"              : "az",
+        "short_description" : "az",
+        "description"       : "Azerbaijani"
+    }, {
+        "name"              : "az\tcyrillic",
+        "short_description" : "",
+        "description"       : "Azerbaijani (Cyrillic)"
+    }, {
+        "name"              : "by",
+        "short_description" : "by",
+        "description"       : "Belarusian"
+    }, {
+        "name"              : "by\tlegacy",
+        "short_description" : "",
+        "description"       : "Belarusian (legacy)"
+    }, {
+        "name"              : "by\tlatin",
+        "short_description" : "",
+        "description"       : "Belarusian (Latin)"
+    }, {
+        "name"              : "be",
+        "short_description" : "be",
+        "description"       : "Belgian"
+    }, {
+        "name"              : "be\toss",
+        "short_description" : "",
+        "description"       : "Belgian (alternative)"
+    }, {
+        "name"              : "be\toss_latin9",
+        "short_description" : "",
+        "description"       : "Belgian (alternative, Latin-9 only)"
+    }, {
+        "name"              : "be\toss_sundeadkeys",
+        "short_description" : "",
+        "description"       : "Belgian (alternative, Sun dead keys)"
+    }, {
+        "name"              : "be\tiso-alternate",
+        "short_description" : "",
+        "description"       : "Belgian (ISO alternate)"
+    }, {
+        "name"              : "be\tnodeadkeys",
+        "short_description" : "",
+        "description"       : "Belgian (eliminate dead keys)"
+    }, {
+        "name"              : "be\tsundeadkeys",
+        "short_description" : "",
+        "description"       : "Belgian (Sun dead keys)"
+    }, {
+        "name"              : "be\twang",
+        "short_description" : "",
+        "description"       : "Belgian (Wang model 724 azerty)"
+    }, {
+        "name"              : "bd",
+        "short_description" : "bn",
+        "description"       : "Bangla"
+    }, {
+        "name"              : "bd\tprobhat",
+        "short_description" : "",
+        "description"       : "Bangla (Probhat)"
+    }, {
+        "name"              : "in",
+        "short_description" : "in",
+        "description"       : "Indian"
+    }, {
+        "name"              : "in\tben",
+        "short_description" : "bn",
+        "description"       : "Bangla (India)"
+    }, {
+        "name"              : "in\tben_probhat",
+        "short_description" : "bn",
+        "description"       : "Bangla (India, Probhat)"
+    }, {
+        "name"              : "in\tben_baishakhi",
+        "short_description" : "",
+        "description"       : "Bangla (India, Baishakhi)"
+    }, {
+        "name"              : "in\tben_bornona",
+        "short_description" : "",
+        "description"       : "Bangla (India, Bornona)"
+    }, {
+        "name"              : "in\tben_gitanjali",
+        "short_description" : "",
+        "description"       : "Bangla (India, Uni Gitanjali)"
+    }, {
+        "name"              : "in\tben_inscript",
+        "short_description" : "",
+        "description"       : "Bangla (India, Baishakhi Inscript)"
+    }, {
+        "name"              : "in\tguj",
+        "short_description" : "gu",
+        "description"       : "Gujarati"
+    }, {
+        "name"              : "in\tguru",
+        "short_description" : "pa",
+        "description"       : "Punjabi (Gurmukhi)"
+    }, {
+        "name"              : "in\tjhelum",
+        "short_description" : "pa",
+        "description"       : "Punjabi (Gurmukhi Jhelum)"
+    }, {
+        "name"              : "in\tkan",
+        "short_description" : "kn",
+        "description"       : "Kannada"
+    }, {
+        "name"              : "in\tkan-kagapa",
+        "short_description" : "kn",
+        "description"       : "Kannada (KaGaPa phonetic)"
+    }, {
+        "name"              : "in\tmal",
+        "short_description" : "ml",
+        "description"       : "Malayalam"
+    }, {
+        "name"              : "in\tmal_lalitha",
+        "short_description" : "ml",
+        "description"       : "Malayalam (Lalitha)"
+    }, {
+        "name"              : "in\tmal_enhanced",
+        "short_description" : "ml",
+        "description"       : "Malayalam (enhanced Inscript with Rupee Sign)"
+    }, {
+        "name"              : "in\tori",
+        "short_description" : "or",
+        "description"       : "Oriya"
+    }, {
+        "name"              : "in\ttam_unicode",
+        "short_description" : "ta",
+        "description"       : "Tamil (Unicode)"
+    }, {
+        "name"              : "in\ttam_keyboard_with_numerals",
+        "short_description" : "ta",
+        "description"       : "Tamil (keyboard with numerals)"
+    }, {
+        "name"              : "in\ttam_TAB",
+        "short_description" : "ta",
+        "description"       : "Tamil (TAB typewriter)"
+    }, {
+        "name"              : "in\ttam_TSCII",
+        "short_description" : "ta",
+        "description"       : "Tamil (TSCII typewriter)"
+    }, {
+        "name"              : "in\ttam",
+        "short_description" : "ta",
+        "description"       : "Tamil"
+    }, {
+        "name"              : "in\ttel",
+        "short_description" : "te",
+        "description"       : "Telugu"
+    }, {
+        "name"              : "in\ttel-kagapa",
+        "short_description" : "te",
+        "description"       : "Telugu (KaGaPa phonetic)"
+    }, {
+        "name"              : "in\turd-phonetic",
+        "short_description" : "ur",
+        "description"       : "Urdu (phonetic)"
+    }, {
+        "name"              : "in\turd-phonetic3",
+        "short_description" : "ur",
+        "description"       : "Urdu (alternative phonetic)"
+    }, {
+        "name"              : "in\turd-winkeys",
+        "short_description" : "ur",
+        "description"       : "Urdu (WinKeys)"
+    }, {
+        "name"              : "in\tbolnagri",
+        "short_description" : "hi",
+        "description"       : "Hindi (Bolnagri)"
+    }, {
+        "name"              : "in\thin-wx",
+        "short_description" : "hi",
+        "description"       : "Hindi (Wx)"
+    }, {
+        "name"              : "in\thin-kagapa",
+        "short_description" : "hi",
+        "description"       : "Hindi (KaGaPa phonetic)"
+    }, {
+        "name"              : "in\tsan-kagapa",
+        "short_description" : "sa",
+        "description"       : "Sanskrit (KaGaPa phonetic)"
+    }, {
+        "name"              : "in\tmar-kagapa",
+        "short_description" : "mr",
+        "description"       : "Marathi (KaGaPa phonetic)"
+    }, {
+        "name"              : "in\teng",
+        "short_description" : "en",
+        "description"       : "English (India, with RupeeSign)"
+    }, {
+        "name"              : "ba",
+        "short_description" : "bs",
+        "description"       : "Bosnian"
+    }, {
+        "name"              : "ba\talternatequotes",
+        "short_description" : "",
+        "description"       : "Bosnian (use guillemets for quotes)"
+    }, {
+        "name"              : "ba\tunicode",
+        "short_description" : "",
+        "description"       : "Bosnian (use Bosnian digraphs)"
+    }, {
+        "name"              : "ba\tunicodeus",
+        "short_description" : "",
+        "description"       : "Bosnian (US keyboard with Bosnian digraphs)"
+    }, {
+        "name"              : "ba\tus",
+        "short_description" : "",
+        "description"       : "Bosnian (US keyboard with Bosnian letters)"
+    }, {
+        "name"              : "br",
+        "short_description" : "pt",
+        "description"       : "Portuguese (Brazil)"
+    }, {
+        "name"              : "br\tnodeadkeys",
+        "short_description" : "",
+        "description"       : "Portuguese (Brazil, eliminate dead keys)"
+    }, {
+        "name"              : "br\tdvorak",
+        "short_description" : "",
+        "description"       : "Portuguese (Brazil, Dvorak)"
+    }, {
+        "name"              : "br\tnativo",
+        "short_description" : "",
+        "description"       : "Portuguese (Brazil, nativo)"
+    }, {
+        "name"              : "br\tnativo-us",
+        "short_description" : "",
+        "description"       : "Portuguese (Brazil, nativo for US keyboards)"
+    }, {
+        "name"              : "br\tnativo-epo",
+        "short_description" : "",
+        "description"       : "Portuguese (Brazil, nativo for Esperanto)"
+    }, {
+        "name"              : "bg",
+        "short_description" : "bg",
+        "description"       : "Bulgarian"
+    }, {
+        "name"              : "bg\tphonetic",
+        "short_description" : "",
+        "description"       : "Bulgarian (traditional phonetic)"
+    }, {
+        "name"              : "bg\tbas_phonetic",
+        "short_description" : "",
+        "description"       : "Bulgarian (new phonetic)"
+    }, {
+        "name"              : "ma",
+        "short_description" : "ar",
+        "description"       : "Arabic (Morocco)"
+    }, {
+        "name"              : "ma\tfrench",
+        "short_description" : "fr",
+        "description"       : "French (Morocco)"
+    }, {
+        "name"              : "ma\ttifinagh",
+        "short_description" : "ber",
+        "description"       : "Berber (Morocco, Tifinagh)"
+    }, {
+        "name"              : "ma\ttifinagh-alt",
+        "short_description" : "ber",
+        "description"       : "Berber (Morocco, Tifinagh alternative)"
+    }, {
+        "name"              : "ma\ttifinagh-alt-phonetic",
+        "short_description" : "ber",
+        "description"       : "Berber (Morocco, Tifinagh alternative phonetic)"
+    }, {
+        "name"              : "ma\ttifinagh-extended",
+        "short_description" : "ber",
+        "description"       : "Berber (Morocco, Tifinagh extended)"
+    }, {
+        "name"              : "ma\ttifinagh-phonetic",
+        "short_description" : "ber",
+        "description"       : "Berber (Morocco, Tifinagh phonetic)"
+    }, {
+        "name"              : "ma\ttifinagh-extended-phonetic",
+        "short_description" : "ber",
+        "description"       : "Berber (Morocco, Tifinagh extended phonetic)"
+    }, {
+        "name"              : "cm",
+        "short_description" : "cm",
+        "description"       : "English (Cameroon)"
+    }, {
+        "name"              : "cm\tfrench",
+        "short_description" : "",
+        "description"       : "French (Cameroon)"
+    }, {
+        "name"              : "cm\tqwerty",
+        "short_description" : "",
+        "description"       : "Cameroon Multilingual (qwerty)"
+    }, {
+        "name"              : "cm\tazerty",
+        "short_description" : "",
+        "description"       : "Cameroon Multilingual (azerty)"
+    }, {
+        "name"              : "cm\tdvorak",
+        "short_description" : "",
+        "description"       : "Cameroon Multilingual (Dvorak)"
+    }, {
+        "name"              : "mm",
+        "short_description" : "my",
+        "description"       : "Burmese"
+    }, {
+        "name"              : "ca",
+        "short_description" : "fr",
+        "description"       : "French (Canada)"
+    }, {
+        "name"              : "ca\tfr-dvorak",
+        "short_description" : "fr",
+        "description"       : "French (Canada, Dvorak)"
+    }, {
+        "name"              : "ca\tfr-legacy",
+        "short_description" : "fr",
+        "description"       : "French (Canada, legacy)"
+    }, {
+        "name"              : "ca\tmultix",
+        "short_description" : "",
+        "description"       : "Canadian Multilingual"
+    }, {
+        "name"              : "ca\tmulti",
+        "short_description" : "",
+        "description"       : "Canadian Multilingual (first part)"
+    }, {
+        "name"              : "ca\tmulti-2gr",
+        "short_description" : "",
+        "description"       : "Canadian Multilingual (second part)"
+    }, {
+        "name"              : "ca\tike",
+        "short_description" : "ike",
+        "description"       : "Inuktitut"
+    }, {
+        "name"              : "ca\teng",
+        "short_description" : "en",
+        "description"       : "English (Canada)"
+    }, {
+        "name"              : "cd",
+        "short_description" : "fr",
+        "description"       : "French (Democratic Republic of the Congo)"
+    }, {
+        "name"              : "cn",
+        "short_description" : "zh",
+        "description"       : "Chinese"
+    }, {
+        "name"              : "cn\ttib",
+        "short_description" : "",
+        "description"       : "Tibetan"
+    }, {
+        "name"              : "cn\ttib_asciinum",
+        "short_description" : "",
+        "description"       : "Tibetan (with ASCII numerals)"
+    }, {
+        "name"              : "cn\tuig",
+        "short_description" : "",
+        "description"       : "Uyghur"
+    }, {
+        "name"              : "hr",
+        "short_description" : "hr",
+        "description"       : "Croatian"
+    }, {
+        "name"              : "hr\talternatequotes",
+        "short_description" : "",
+        "description"       : "Croatian (use guillemets for quotes)"
+    }, {
+        "name"              : "hr\tunicode",
+        "short_description" : "",
+        "description"       : "Croatian (use Croatian digraphs)"
+    }, {
+        "name"              : "hr\tunicodeus",
+        "short_description" : "",
+        "description"       : "Croatian (US keyboard with Croatian digraphs)"
+    }, {
+        "name"              : "hr\tus",
+        "short_description" : "",
+        "description"       : "Croatian (US keyboard with Croatian letters)"
+    }, {
+        "name"              : "cz",
+        "short_description" : "cs",
+        "description"       : "Czech"
+    }, {
+        "name"              : "cz\tbksl",
+        "short_description" : "",
+        "description"       : "Czech (with <\\|> key)"
+    }, {
+        "name"              : "cz\tqwerty",
+        "short_description" : "",
+        "description"       : "Czech (qwerty)"
+    }, {
+        "name"              : "cz\tqwerty_bksl",
+        "short_description" : "",
+        "description"       : "Czech (qwerty, extended Backslash)"
+    }, {
+        "name"              : "cz\tucw",
+        "short_description" : "",
+        "description"       : "Czech (UCW layout, accented letters only)"
+    }, {
+        "name"              : "cz\tdvorak-ucw",
+        "short_description" : "",
+        "description"       : "Czech (US Dvorak with CZ UCW support)"
+    }, {
+        "name"              : "dk",
+        "short_description" : "da",
+        "description"       : "Danish"
+    }, {
+        "name"              : "dk\tnodeadkeys",
+        "short_description" : "",
+        "description"       : "Danish (eliminate dead keys)"
+    }, {
+        "name"              : "dk\tmac",
+        "short_description" : "",
+        "description"       : "Danish (Macintosh)"
+    }, {
+        "name"              : "dk\tmac_nodeadkeys",
+        "short_description" : "",
+        "description"       : "Danish (Macintosh, eliminate dead keys)"
+    }, {
+        "name"              : "dk\tdvorak",
+        "short_description" : "",
+        "description"       : "Danish (Dvorak)"
+    }, {
+        "name"              : "nl",
+        "short_description" : "nl",
+        "description"       : "Dutch"
+    }, {
+        "name"              : "nl\tsundeadkeys",
+        "short_description" : "",
+        "description"       : "Dutch (Sun dead keys)"
+    }, {
+        "name"              : "nl\tmac",
+        "short_description" : "",
+        "description"       : "Dutch (Macintosh)"
+    }, {
+        "name"              : "nl\tstd",
+        "short_description" : "",
+        "description"       : "Dutch (standard)"
+    }, {
+        "name"              : "bt",
+        "short_description" : "dz",
+        "description"       : "Dzongkha"
+    }, {
+        "name"              : "ee",
+        "short_description" : "et",
+        "description"       : "Estonian"
+    }, {
+        "name"              : "ee\tnodeadkeys",
+        "short_description" : "",
+        "description"       : "Estonian (eliminate dead keys)"
+    }, {
+        "name"              : "ee\tdvorak",
+        "short_description" : "",
+        "description"       : "Estonian (Dvorak)"
+    }, {
+        "name"              : "ee\tus",
+        "short_description" : "",
+        "description"       : "Estonian (US keyboard with Estonian letters)"
+    }, {
+        "name"              : "ir",
+        "short_description" : "fa",
+        "description"       : "Persian"
+    }, {
+        "name"              : "ir\tpes_keypad",
+        "short_description" : "",
+        "description"       : "Persian (with Persian Keypad)"
+    }, {
+        "name"              : "ir\tku",
+        "short_description" : "ku",
+        "description"       : "Kurdish (Iran, Latin Q)"
+    }, {
+        "name"              : "ir\tku_f",
+        "short_description" : "ku",
+        "description"       : "Kurdish (Iran, F)"
+    }, {
+        "name"              : "ir\tku_alt",
+        "short_description" : "ku",
+        "description"       : "Kurdish (Iran, Latin Alt-Q)"
+    }, {
+        "name"              : "ir\tku_ara",
+        "short_description" : "ku",
+        "description"       : "Kurdish (Iran, Arabic-Latin)"
+    }, {
+        "name"              : "iq",
+        "short_description" : "ar",
+        "description"       : "Iraqi"
+    }, {
+        "name"              : "iq\tku",
+        "short_description" : "ku",
+        "description"       : "Kurdish (Iraq, Latin Q)"
+    }, {
+        "name"              : "iq\tku_f",
+        "short_description" : "ku",
+        "description"       : "Kurdish (Iraq, F)"
+    }, {
+        "name"              : "iq\tku_alt",
+        "short_description" : "ku",
+        "description"       : "Kurdish (Iraq, Latin Alt-Q)"
+    }, {
+        "name"              : "iq\tku_ara",
+        "short_description" : "ku",
+        "description"       : "Kurdish (Iraq, Arabic-Latin)"
+    }, {
+        "name"              : "fo",
+        "short_description" : "fo",
+        "description"       : "Faroese"
+    }, {
+        "name"              : "fo\tnodeadkeys",
+        "short_description" : "",
+        "description"       : "Faroese (eliminate dead keys)"
+    }, {
+        "name"              : "fi",
+        "short_description" : "fi",
+        "description"       : "Finnish"
+    }, {
+        "name"              : "fi\tclassic",
+        "short_description" : "",
+        "description"       : "Finnish (classic)"
+    }, {
+        "name"              : "fi\tnodeadkeys",
+        "short_description" : "",
+        "description"       : "Finnish (classic, eliminate dead keys)"
+    }, {
+        "name"              : "fi\tsmi",
+        "short_description" : "",
+        "description"       : "Northern Saami (Finland)"
+    }, {
+        "name"              : "fi\tmac",
+        "short_description" : "",
+        "description"       : "Finnish (Macintosh)"
+    }, {
+        "name"              : "fr",
+        "short_description" : "fr",
+        "description"       : "French"
+    }, {
+        "name"              : "fr\tnodeadkeys",
+        "short_description" : "",
+        "description"       : "French (eliminate dead keys)"
+    }, {
+        "name"              : "fr\tsundeadkeys",
+        "short_description" : "",
+        "description"       : "French (Sun dead keys)"
+    }, {
+        "name"              : "fr\toss",
+        "short_description" : "",
+        "description"       : "French (alternative)"
+    }, {
+        "name"              : "fr\toss_latin9",
+        "short_description" : "",
+        "description"       : "French (alternative, Latin-9 only)"
+    }, {
+        "name"              : "fr\toss_nodeadkeys",
+        "short_description" : "",
+        "description"       : "French (alternative, eliminate dead keys)"
+    }, {
+        "name"              : "fr\toss_sundeadkeys",
+        "short_description" : "",
+        "description"       : "French (alternative, Sun dead keys)"
+    }, {
+        "name"              : "fr\tlatin9",
+        "short_description" : "",
+        "description"       : "French (legacy, alternative)"
+    }, {
+        "name"              : "fr\tlatin9_nodeadkeys",
+        "short_description" : "",
+        "description"       : "French (legacy, alternative, eliminate dead keys)"
+    }, {
+        "name"              : "fr\tlatin9_sundeadkeys",
+        "short_description" : "",
+        "description"       : "French (legacy, alternative, Sun dead keys)"
+    }, {
+        "name"              : "fr\tbepo",
+        "short_description" : "",
+        "description"       : "French (Bepo, ergonomic, Dvorak way)"
+    }, {
+        "name"              : "fr\tbepo_latin9",
+        "short_description" : "",
+        "description"       : "French (Bepo, ergonomic, Dvorak way, Latin-9 only)"
+    }, {
+        "name"              : "fr\tdvorak",
+        "short_description" : "",
+        "description"       : "French (Dvorak)"
+    }, {
+        "name"              : "fr\tmac",
+        "short_description" : "",
+        "description"       : "French (Macintosh)"
+    }, {
+        "name"              : "fr\tbre",
+        "short_description" : "",
+        "description"       : "French (Breton)"
+    }, {
+        "name"              : "fr\toci",
+        "short_description" : "",
+        "description"       : "Occitan"
+    }, {
+        "name"              : "fr\tgeo",
+        "short_description" : "",
+        "description"       : "Georgian (France, AZERTY Tskapo)"
+    }, {
+        "name"              : "gh",
+        "short_description" : "en",
+        "description"       : "English (Ghana)"
+    }, {
+        "name"              : "gh\tgeneric",
+        "short_description" : "",
+        "description"       : "English (Ghana, multilingual)"
+    }, {
+        "name"              : "gh\takan",
+        "short_description" : "ak",
+        "description"       : "Akan"
+    }, {
+        "name"              : "gh\tewe",
+        "short_description" : "ee",
+        "description"       : "Ewe"
+    }, {
+        "name"              : "gh\tfula",
+        "short_description" : "ff",
+        "description"       : "Fula"
+    }, {
+        "name"              : "gh\tga",
+        "short_description" : "gaa",
+        "description"       : "Ga"
+    }, {
+        "name"              : "gh\thausa",
+        "short_description" : "ha",
+        "description"       : "Hausa"
+    }, {
+        "name"              : "gh\tavn",
+        "short_description" : "avn",
+        "description"       : "Avatime"
+    }, {
+        "name"              : "gh\tgillbt",
+        "short_description" : "",
+        "description"       : "English (Ghana, GILLBT)"
+    }, {
+        "name"              : "gn",
+        "short_description" : "fr",
+        "description"       : "French (Guinea)"
+    }, {
+        "name"              : "ge",
+        "short_description" : "ka",
+        "description"       : "Georgian"
+    }, {
+        "name"              : "ge\tergonomic",
+        "short_description" : "",
+        "description"       : "Georgian (ergonomic)"
+    }, {
+        "name"              : "ge\tmess",
+        "short_description" : "",
+        "description"       : "Georgian (MESS)"
+    }, {
+        "name"              : "ge\tru",
+        "short_description" : "ru",
+        "description"       : "Russian (Georgia)"
+    }, {
+        "name"              : "ge\tos",
+        "short_description" : "",
+        "description"       : "Ossetian (Georgia)"
+    }, {
+        "name"              : "de",
+        "short_description" : "de",
+        "description"       : "German"
+    }, {
+        "name"              : "de\tdeadacute",
+        "short_description" : "",
+        "description"       : "German (dead acute)"
+    }, {
+        "name"              : "de\tdeadgraveacute",
+        "short_description" : "",
+        "description"       : "German (dead grave acute)"
+    }, {
+        "name"              : "de\tnodeadkeys",
+        "short_description" : "",
+        "description"       : "German (eliminate dead keys)"
+    }, {
+        "name"              : "de\tT3",
+        "short_description" : "",
+        "description"       : "German (T3)"
+    }, {
+        "name"              : "de\tro",
+        "short_description" : "",
+        "description"       : "Romanian (Germany)"
+    }, {
+        "name"              : "de\tro_nodeadkeys",
+        "short_description" : "",
+        "description"       : "Romanian (Germany, eliminate dead keys)"
+    }, {
+        "name"              : "de\tdvorak",
+        "short_description" : "",
+        "description"       : "German (Dvorak)"
+    }, {
+        "name"              : "de\tsundeadkeys",
+        "short_description" : "",
+        "description"       : "German (Sun dead keys)"
+    }, {
+        "name"              : "de\tneo",
+        "short_description" : "",
+        "description"       : "German (Neo 2)"
+    }, {
+        "name"              : "de\tmac",
+        "short_description" : "",
+        "description"       : "German (Macintosh)"
+    }, {
+        "name"              : "de\tmac_nodeadkeys",
+        "short_description" : "",
+        "description"       : "German (Macintosh, eliminate dead keys)"
+    }, {
+        "name"              : "de\tdsb",
+        "short_description" : "",
+        "description"       : "Lower Sorbian"
+    }, {
+        "name"              : "de\tdsb_qwertz",
+        "short_description" : "",
+        "description"       : "Lower Sorbian (qwertz)"
+    }, {
+        "name"              : "de\tqwerty",
+        "short_description" : "",
+        "description"       : "German (qwerty)"
+    }, {
+        "name"              : "de\tru",
+        "short_description" : "ru",
+        "description"       : "Russian (Germany, phonetic)"
+    }, {
+        "name"              : "de\tlegacy",
+        "short_description" : "",
+        "description"       : "German (legacy)"
+    }, {
+        "name"              : "gr",
+        "short_description" : "gr",
+        "description"       : "Greek"
+    }, {
+        "name"              : "gr\tsimple",
+        "short_description" : "",
+        "description"       : "Greek (simple)"
+    }, {
+        "name"              : "gr\textended",
+        "short_description" : "",
+        "description"       : "Greek (extended)"
+    }, {
+        "name"              : "gr\tnodeadkeys",
+        "short_description" : "",
+        "description"       : "Greek (eliminate dead keys)"
+    }, {
+        "name"              : "gr\tpolytonic",
+        "short_description" : "",
+        "description"       : "Greek (polytonic)"
+    }, {
+        "name"              : "hu",
+        "short_description" : "hu",
+        "description"       : "Hungarian"
+    }, {
+        "name"              : "hu\tstandard",
+        "short_description" : "",
+        "description"       : "Hungarian (standard)"
+    }, {
+        "name"              : "hu\tnodeadkeys",
+        "short_description" : "",
+        "description"       : "Hungarian (eliminate dead keys)"
+    }, {
+        "name"              : "hu\tqwerty",
+        "short_description" : "",
+        "description"       : "Hungarian (qwerty)"
+    }, {
+        "name"              : "hu\t101_qwertz_comma_dead",
+        "short_description" : "",
+        "description"       : "Hungarian (101/qwertz/comma/dead keys)"
+    }, {
+        "name"              : "hu\t101_qwertz_comma_nodead",
+        "short_description" : "",
+        "description"       : "Hungarian (101/qwertz/comma/eliminate dead keys)"
+    }, {
+        "name"              : "hu\t101_qwertz_dot_dead",
+        "short_description" : "",
+        "description"       : "Hungarian (101/qwertz/dot/dead keys)"
+    }, {
+        "name"              : "hu\t101_qwertz_dot_nodead",
+        "short_description" : "",
+        "description"       : "Hungarian (101/qwertz/dot/eliminate dead keys)"
+    }, {
+        "name"              : "hu\t101_qwerty_comma_dead",
+        "short_description" : "",
+        "description"       : "Hungarian (101/qwerty/comma/dead keys)"
+    }, {
+        "name"              : "hu\t101_qwerty_comma_nodead",
+        "short_description" : "",
+        "description"       : "Hungarian (101/qwerty/comma/eliminate dead keys)"
+    }, {
+        "name"              : "hu\t101_qwerty_dot_dead",
+        "short_description" : "",
+        "description"       : "Hungarian (101/qwerty/dot/dead keys)"
+    }, {
+        "name"              : "hu\t101_qwerty_dot_nodead",
+        "short_description" : "",
+        "description"       : "Hungarian (101/qwerty/dot/eliminate dead keys)"
+    }, {
+        "name"              : "hu\t102_qwertz_comma_dead",
+        "short_description" : "",
+        "description"       : "Hungarian (102/qwertz/comma/dead keys)"
+    }, {
+        "name"              : "hu\t102_qwertz_comma_nodead",
+        "short_description" : "",
+        "description"       : "Hungarian (102/qwertz/comma/eliminate dead keys)"
+    }, {
+        "name"              : "hu\t102_qwertz_dot_dead",
+        "short_description" : "",
+        "description"       : "Hungarian (102/qwertz/dot/dead keys)"
+    }, {
+        "name"              : "hu\t102_qwertz_dot_nodead",
+        "short_description" : "",
+        "description"       : "Hungarian (102/qwertz/dot/eliminate dead keys)"
+    }, {
+        "name"              : "hu\t102_qwerty_comma_dead",
+        "short_description" : "",
+        "description"       : "Hungarian (102/qwerty/comma/dead keys)"
+    }, {
+        "name"              : "hu\t102_qwerty_comma_nodead",
+        "short_description" : "",
+        "description"       : "Hungarian (102/qwerty/comma/eliminate dead keys)"
+    }, {
+        "name"              : "hu\t102_qwerty_dot_dead",
+        "short_description" : "",
+        "description"       : "Hungarian (102/qwerty/dot/dead keys)"
+    }, {
+        "name"              : "hu\t102_qwerty_dot_nodead",
+        "short_description" : "",
+        "description"       : "Hungarian (102/qwerty/dot/eliminate dead keys)"
+    }, {
+        "name"              : "is",
+        "short_description" : "is",
+        "description"       : "Icelandic"
+    }, {
+        "name"              : "is\tSundeadkeys",
+        "short_description" : "",
+        "description"       : "Icelandic (Sun dead keys)"
+    }, {
+        "name"              : "is\tnodeadkeys",
+        "short_description" : "",
+        "description"       : "Icelandic (eliminate dead keys)"
+    }, {
+        "name"              : "is\tmac",
+        "short_description" : "",
+        "description"       : "Icelandic (Macintosh)"
+    }, {
+        "name"              : "is\tdvorak",
+        "short_description" : "",
+        "description"       : "Icelandic (Dvorak)"
+    }, {
+        "name"              : "il",
+        "short_description" : "he",
+        "description"       : "Hebrew"
+    }, {
+        "name"              : "il\tlyx",
+        "short_description" : "",
+        "description"       : "Hebrew (lyx)"
+    }, {
+        "name"              : "il\tphonetic",
+        "short_description" : "",
+        "description"       : "Hebrew (phonetic)"
+    }, {
+        "name"              : "il\tbiblical",
+        "short_description" : "",
+        "description"       : "Hebrew (Biblical, Tiro)"
+    }, {
+        "name"              : "it",
+        "short_description" : "it",
+        "description"       : "Italian"
+    }, {
+        "name"              : "it\tnodeadkeys",
+        "short_description" : "",
+        "description"       : "Italian (eliminate dead keys)"
+    }, {
+        "name"              : "it\tmac",
+        "short_description" : "",
+        "description"       : "Italian (Macintosh)"
+    }, {
+        "name"              : "it\tus",
+        "short_description" : "",
+        "description"       : "Italian (US keyboard with Italian letters)"
+    }, {
+        "name"              : "it\tgeo",
+        "short_description" : "",
+        "description"       : "Georgian (Italy)"
+    }, {
+        "name"              : "it\tibm",
+        "short_description" : "",
+        "description"       : "Italian (IBM 142)"
+    }, {
+        "name"              : "jp",
+        "short_description" : "ja",
+        "description"       : "Japanese"
+    }, {
+        "name"              : "jp\tkana",
+        "short_description" : "",
+        "description"       : "Japanese (Kana)"
+    }, {
+        "name"              : "jp\tkana86",
+        "short_description" : "",
+        "description"       : "Japanese (Kana 86)"
+    }, {
+        "name"              : "jp\tOADG109A",
+        "short_description" : "",
+        "description"       : "Japanese (OADG 109A)"
+    }, {
+        "name"              : "jp\tmac",
+        "short_description" : "",
+        "description"       : "Japanese (Macintosh)"
+    }, {
+        "name"              : "jp\tdvorak",
+        "short_description" : "",
+        "description"       : "Japanese (Dvorak)"
+    }, {
+        "name"              : "kg",
+        "short_description" : "ki",
+        "description"       : "Kyrgyz"
+    }, {
+        "name"              : "kg\tphonetic",
+        "short_description" : "",
+        "description"       : "Kyrgyz (phonetic)"
+    }, {
+        "name"              : "kh",
+        "short_description" : "km",
+        "description"       : "Khmer (Cambodia)"
+    }, {
+        "name"              : "kz",
+        "short_description" : "kk",
+        "description"       : "Kazakh"
+    }, {
+        "name"              : "kz\truskaz",
+        "short_description" : "ru",
+        "description"       : "Russian (Kazakhstan, with Kazakh)"
+    }, {
+        "name"              : "kz\tkazrus",
+        "short_description" : "",
+        "description"       : "Kazakh (with Russian)"
+    }, {
+        "name"              : "la",
+        "short_description" : "lo",
+        "description"       : "Lao"
+    }, {
+        "name"              : "la\tstea",
+        "short_description" : "",
+        "description"       : "Lao (STEA proposed standard layout)"
+    }, {
+        "name"              : "latam",
+        "short_description" : "es",
+        "description"       : "Spanish (Latin American)"
+    }, {
+        "name"              : "latam\tnodeadkeys",
+        "short_description" : "",
+        "description"       : "Spanish (Latin American, eliminate dead keys)"
+    }, {
+        "name"              : "latam\tdeadtilde",
+        "short_description" : "",
+        "description"       : "Spanish (Latin American, include dead tilde)"
+    }, {
+        "name"              : "latam\tsundeadkeys",
+        "short_description" : "",
+        "description"       : "Spanish (Latin American, Sun dead keys)"
+    }, {
+        "name"              : "lt",
+        "short_description" : "lt",
+        "description"       : "Lithuanian"
+    }, {
+        "name"              : "lt\tstd",
+        "short_description" : "",
+        "description"       : "Lithuanian (standard)"
+    }, {
+        "name"              : "lt\tus",
+        "short_description" : "",
+        "description"       : "Lithuanian (US keyboard with Lithuanian letters)"
+    }, {
+        "name"              : "lt\tibm",
+        "short_description" : "",
+        "description"       : "Lithuanian (IBM LST 1205-92)"
+    }, {
+        "name"              : "lt\tlekp",
+        "short_description" : "",
+        "description"       : "Lithuanian (LEKP)"
+    }, {
+        "name"              : "lt\tlekpa",
+        "short_description" : "",
+        "description"       : "Lithuanian (LEKPa)"
+    }, {
+        "name"              : "lv",
+        "short_description" : "lv",
+        "description"       : "Latvian"
+    }, {
+        "name"              : "lv\tapostrophe",
+        "short_description" : "",
+        "description"       : "Latvian (apostrophe variant)"
+    }, {
+        "name"              : "lv\ttilde",
+        "short_description" : "",
+        "description"       : "Latvian (tilde variant)"
+    }, {
+        "name"              : "lv\tfkey",
+        "short_description" : "",
+        "description"       : "Latvian (F variant)"
+    }, {
+        "name"              : "lv\tmodern",
+        "short_description" : "",
+        "description"       : "Latvian (modern)"
+    }, {
+        "name"              : "lv\tergonomic",
+        "short_description" : "",
+        "description"       : "Latvian (ergonomic, ŪGJRMV)"
+    }, {
+        "name"              : "lv\tadapted",
+        "short_description" : "",
+        "description"       : "Latvian (adapted)"
+    }, {
+        "name"              : "mao",
+        "short_description" : "mi",
+        "description"       : "Maori"
+    }, {
+        "name"              : "me",
+        "short_description" : "sr",
+        "description"       : "Montenegrin"
+    }, {
+        "name"              : "me\tcyrillic",
+        "short_description" : "",
+        "description"       : "Montenegrin (Cyrillic)"
+    }, {
+        "name"              : "me\tcyrillicyz",
+        "short_description" : "",
+        "description"       : "Montenegrin (Cyrillic, Z and ZHE swapped)"
+    }, {
+        "name"              : "me\tlatinunicode",
+        "short_description" : "",
+        "description"       : "Montenegrin (Latin Unicode)"
+    }, {
+        "name"              : "me\tlatinyz",
+        "short_description" : "",
+        "description"       : "Montenegrin (Latin qwerty)"
+    }, {
+        "name"              : "me\tlatinunicodeyz",
+        "short_description" : "",
+        "description"       : "Montenegrin (Latin Unicode qwerty)"
+    }, {
+        "name"              : "me\tcyrillicalternatequotes",
+        "short_description" : "",
+        "description"       : "Montenegrin (Cyrillic with guillemets)"
+    }, {
+        "name"              : "me\tlatinalternatequotes",
+        "short_description" : "",
+        "description"       : "Montenegrin (Latin with guillemets)"
+    }, {
+        "name"              : "mk",
+        "short_description" : "mk",
+        "description"       : "Macedonian"
+    }, {
+        "name"              : "mk\tnodeadkeys",
+        "short_description" : "",
+        "description"       : "Macedonian (eliminate dead keys)"
+    }, {
+        "name"              : "mt",
+        "short_description" : "mt",
+        "description"       : "Maltese"
+    }, {
+        "name"              : "mt\tus",
+        "short_description" : "",
+        "description"       : "Maltese (with US layout)"
+    }, {
+        "name"              : "mn",
+        "short_description" : "mn",
+        "description"       : "Mongolian"
+    }, {
+        "name"              : "no",
+        "short_description" : "no",
+        "description"       : "Norwegian"
+    }, {
+        "name"              : "no\tnodeadkeys",
+        "short_description" : "",
+        "description"       : "Norwegian (eliminate dead keys)"
+    }, {
+        "name"              : "no\tdvorak",
+        "short_description" : "",
+        "description"       : "Norwegian (Dvorak)"
+    }, {
+        "name"              : "no\tsmi",
+        "short_description" : "",
+        "description"       : "Northern Saami (Norway)"
+    }, {
+        "name"              : "no\tsmi_nodeadkeys",
+        "short_description" : "",
+        "description"       : "Northern Saami (Norway, eliminate dead keys)"
+    }, {
+        "name"              : "no\tmac",
+        "short_description" : "",
+        "description"       : "Norwegian (Macintosh)"
+    }, {
+        "name"              : "no\tmac_nodeadkeys",
+        "short_description" : "",
+        "description"       : "Norwegian (Macintosh, eliminate dead keys)"
+    }, {
+        "name"              : "no\tcolemak",
+        "short_description" : "",
+        "description"       : "Norwegian (Colemak)"
+    }, {
+        "name"              : "pl",
+        "short_description" : "pl",
+        "description"       : "Polish"
+    }, {
+        "name"              : "pl\tlegacy",
+        "short_description" : "",
+        "description"       : "Polish (legacy)"
+    }, {
+        "name"              : "pl\tqwertz",
+        "short_description" : "",
+        "description"       : "Polish (qwertz)"
+    }, {
+        "name"              : "pl\tdvorak",
+        "short_description" : "",
+        "description"       : "Polish (Dvorak)"
+    }, {
+        "name"              : "pl\tdvorak_quotes",
+        "short_description" : "",
+        "description"       : "Polish (Dvorak, Polish quotes on quotemark key)"
+    }, {
+        "name"              : "pl\tdvorak_altquotes",
+        "short_description" : "",
+        "description"       : "Polish (Dvorak, Polish quotes on key 1)"
+    }, {
+        "name"              : "pl\tcsb",
+        "short_description" : "",
+        "description"       : "Kashubian"
+    }, {
+        "name"              : "pl\tszl",
+        "short_description" : "",
+        "description"       : "Silesian"
+    }, {
+        "name"              : "pl\tru_phonetic_dvorak",
+        "short_description" : "ru",
+        "description"       : "Russian (Poland, phonetic Dvorak)"
+    }, {
+        "name"              : "pl\tdvp",
+        "short_description" : "",
+        "description"       : "Polish (programmer Dvorak)"
+    }, {
+        "name"              : "pt",
+        "short_description" : "pt",
+        "description"       : "Portuguese"
+    }, {
+        "name"              : "pt\tnodeadkeys",
+        "short_description" : "",
+        "description"       : "Portuguese (eliminate dead keys)"
+    }, {
+        "name"              : "pt\tsundeadkeys",
+        "short_description" : "",
+        "description"       : "Portuguese (Sun dead keys)"
+    }, {
+        "name"              : "pt\tmac",
+        "short_description" : "",
+        "description"       : "Portuguese (Macintosh)"
+    }, {
+        "name"              : "pt\tmac_nodeadkeys",
+        "short_description" : "",
+        "description"       : "Portuguese (Macintosh, eliminate dead keys)"
+    }, {
+        "name"              : "pt\tmac_sundeadkeys",
+        "short_description" : "",
+        "description"       : "Portuguese (Macintosh, Sun dead keys)"
+    }, {
+        "name"              : "pt\tnativo",
+        "short_description" : "",
+        "description"       : "Portuguese (Nativo)"
+    }, {
+        "name"              : "pt\tnativo-us",
+        "short_description" : "",
+        "description"       : "Portuguese (Nativo for US keyboards)"
+    }, {
+        "name"              : "pt\tnativo-epo",
+        "short_description" : "",
+        "description"       : "Esperanto (Portugal, Nativo)"
+    }, {
+        "name"              : "ro",
+        "short_description" : "ro",
+        "description"       : "Romanian"
+    }, {
+        "name"              : "ro\tcedilla",
+        "short_description" : "",
+        "description"       : "Romanian (cedilla)"
+    }, {
+        "name"              : "ro\tstd",
+        "short_description" : "",
+        "description"       : "Romanian (standard)"
+    }, {
+        "name"              : "ro\tstd_cedilla",
+        "short_description" : "",
+        "description"       : "Romanian (standard cedilla)"
+    }, {
+        "name"              : "ro\twinkeys",
+        "short_description" : "",
+        "description"       : "Romanian (WinKeys)"
+    }, {
+        "name"              : "ru",
+        "short_description" : "ru",
+        "description"       : "Russian"
+    }, {
+        "name"              : "ru\tphonetic",
+        "short_description" : "",
+        "description"       : "Russian (phonetic)"
+    }, {
+        "name"              : "ru\tphonetic_winkeys",
+        "short_description" : "",
+        "description"       : "Russian (phonetic WinKeys)"
+    }, {
+        "name"              : "ru\ttypewriter",
+        "short_description" : "",
+        "description"       : "Russian (typewriter)"
+    }, {
+        "name"              : "ru\tlegacy",
+        "short_description" : "",
+        "description"       : "Russian (legacy)"
+    }, {
+        "name"              : "ru\ttypewriter-legacy",
+        "short_description" : "",
+        "description"       : "Russian (typewriter, legacy)"
+    }, {
+        "name"              : "ru\ttt",
+        "short_description" : "",
+        "description"       : "Tatar"
+    }, {
+        "name"              : "ru\tos_legacy",
+        "short_description" : "",
+        "description"       : "Ossetian (legacy)"
+    }, {
+        "name"              : "ru\tos_winkeys",
+        "short_description" : "",
+        "description"       : "Ossetian (WinKeys)"
+    }, {
+        "name"              : "ru\tcv",
+        "short_description" : "",
+        "description"       : "Chuvash"
+    }, {
+        "name"              : "ru\tcv_latin",
+        "short_description" : "",
+        "description"       : "Chuvash (Latin)"
+    }, {
+        "name"              : "ru\tudm",
+        "short_description" : "",
+        "description"       : "Udmurt"
+    }, {
+        "name"              : "ru\tkom",
+        "short_description" : "",
+        "description"       : "Komi"
+    }, {
+        "name"              : "ru\tsah",
+        "short_description" : "",
+        "description"       : "Yakut"
+    }, {
+        "name"              : "ru\txal",
+        "short_description" : "",
+        "description"       : "Kalmyk"
+    }, {
+        "name"              : "ru\tdos",
+        "short_description" : "",
+        "description"       : "Russian (DOS)"
+    }, {
+        "name"              : "ru\tmac",
+        "short_description" : "",
+        "description"       : "Russian (Macintosh)"
+    }, {
+        "name"              : "ru\tsrp",
+        "short_description" : "",
+        "description"       : "Serbian (Russia)"
+    }, {
+        "name"              : "ru\tbak",
+        "short_description" : "",
+        "description"       : "Bashkirian"
+    }, {
+        "name"              : "ru\tchm",
+        "short_description" : "",
+        "description"       : "Mari"
+    }, {
+        "name"              : "rs",
+        "short_description" : "sr",
+        "description"       : "Serbian"
+    }, {
+        "name"              : "rs\tyz",
+        "short_description" : "",
+        "description"       : "Serbian (Cyrillic, Z and ZHE swapped)"
+    }, {
+        "name"              : "rs\tlatin",
+        "short_description" : "",
+        "description"       : "Serbian (Latin)"
+    }, {
+        "name"              : "rs\tlatinunicode",
+        "short_description" : "",
+        "description"       : "Serbian (Latin Unicode)"
+    }, {
+        "name"              : "rs\tlatinyz",
+        "short_description" : "",
+        "description"       : "Serbian (Latin qwerty)"
+    }, {
+        "name"              : "rs\tlatinunicodeyz",
+        "short_description" : "",
+        "description"       : "Serbian (Latin Unicode qwerty)"
+    }, {
+        "name"              : "rs\talternatequotes",
+        "short_description" : "",
+        "description"       : "Serbian (Cyrillic with guillemets)"
+    }, {
+        "name"              : "rs\tlatinalternatequotes",
+        "short_description" : "",
+        "description"       : "Serbian (Latin with guillemets)"
+    }, {
+        "name"              : "rs\true",
+        "short_description" : "",
+        "description"       : "Pannonian Rusyn (homophonic)"
+    }, {
+        "name"              : "si",
+        "short_description" : "sl",
+        "description"       : "Slovenian"
+    }, {
+        "name"              : "si\talternatequotes",
+        "short_description" : "",
+        "description"       : "Slovenian (use guillemets for quotes)"
+    }, {
+        "name"              : "si\tus",
+        "short_description" : "",
+        "description"       : "Slovenian (US keyboard with Slovenian letters)"
+    }, {
+        "name"              : "sk",
+        "short_description" : "sk",
+        "description"       : "Slovak"
+    }, {
+        "name"              : "sk\tbksl",
+        "short_description" : "",
+        "description"       : "Slovak (extended Backslash)"
+    }, {
+        "name"              : "sk\tqwerty",
+        "short_description" : "",
+        "description"       : "Slovak (qwerty)"
+    }, {
+        "name"              : "sk\tqwerty_bksl",
+        "short_description" : "",
+        "description"       : "Slovak (qwerty, extended Backslash)"
+    }, {
+        "name"              : "es",
+        "short_description" : "es",
+        "description"       : "Spanish"
+    }, {
+        "name"              : "es\tnodeadkeys",
+        "short_description" : "",
+        "description"       : "Spanish (eliminate dead keys)"
+    }, {
+        "name"              : "es\tdeadtilde",
+        "short_description" : "",
+        "description"       : "Spanish (include dead tilde)"
+    }, {
+        "name"              : "es\tsundeadkeys",
+        "short_description" : "",
+        "description"       : "Spanish (Sun dead keys)"
+    }, {
+        "name"              : "es\tdvorak",
+        "short_description" : "",
+        "description"       : "Spanish (Dvorak)"
+    }, {
+        "name"              : "es\tast",
+        "short_description" : "",
+        "description"       : "Asturian (Spain, with bottom-dot H and bottom-dot L)"
+    }, {
+        "name"              : "es\tcat",
+        "short_description" : "",
+        "description"       : "Catalan (Spain, with middle-dot L)"
+    }, {
+        "name"              : "es\tmac",
+        "short_description" : "",
+        "description"       : "Spanish (Macintosh)"
+    }, {
+        "name"              : "se",
+        "short_description" : "sv",
+        "description"       : "Swedish"
+    }, {
+        "name"              : "se\tnodeadkeys",
+        "short_description" : "",
+        "description"       : "Swedish (eliminate dead keys)"
+    }, {
+        "name"              : "se\tdvorak",
+        "short_description" : "",
+        "description"       : "Swedish (Dvorak)"
+    }, {
+        "name"              : "se\trus",
+        "short_description" : "ru",
+        "description"       : "Russian (Sweden, phonetic)"
+    }, {
+        "name"              : "se\trus_nodeadkeys",
+        "short_description" : "ru",
+        "description"       : "Russian (Sweden, phonetic, eliminate dead keys)"
+    }, {
+        "name"              : "se\tsmi",
+        "short_description" : "",
+        "description"       : "Northern Saami (Sweden)"
+    }, {
+        "name"              : "se\tmac",
+        "short_description" : "",
+        "description"       : "Swedish (Macintosh)"
+    }, {
+        "name"              : "se\tsvdvorak",
+        "short_description" : "",
+        "description"       : "Swedish (Svdvorak)"
+    }, {
+        "name"              : "se\tswl",
+        "short_description" : "",
+        "description"       : "Swedish Sign Language"
+    }, {
+        "name"              : "ch",
+        "short_description" : "de",
+        "description"       : "German (Switzerland)"
+    }, {
+        "name"              : "ch\tlegacy",
+        "short_description" : "",
+        "description"       : "German (Switzerland, legacy)"
+    }, {
+        "name"              : "ch\tde_nodeadkeys",
+        "short_description" : "de",
+        "description"       : "German (Switzerland, eliminate dead keys)"
+    }, {
+        "name"              : "ch\tde_sundeadkeys",
+        "short_description" : "de",
+        "description"       : "German (Switzerland, Sun dead keys)"
+    }, {
+        "name"              : "ch\tfr",
+        "short_description" : "fr",
+        "description"       : "French (Switzerland)"
+    }, {
+        "name"              : "ch\tfr_nodeadkeys",
+        "short_description" : "fr",
+        "description"       : "French (Switzerland, eliminate dead keys)"
+    }, {
+        "name"              : "ch\tfr_sundeadkeys",
+        "short_description" : "fr",
+        "description"       : "French (Switzerland, Sun dead keys)"
+    }, {
+        "name"              : "ch\tfr_mac",
+        "short_description" : "fr",
+        "description"       : "French (Switzerland, Macintosh)"
+    }, {
+        "name"              : "ch\tde_mac",
+        "short_description" : "de",
+        "description"       : "German (Switzerland, Macintosh)"
+    }, {
+        "name"              : "sy",
+        "short_description" : "ar",
+        "description"       : "Arabic (Syria)"
+    }, {
+        "name"              : "sy\tsyc",
+        "short_description" : "syc",
+        "description"       : "Syriac"
+    }, {
+        "name"              : "sy\tsyc_phonetic",
+        "short_description" : "syc",
+        "description"       : "Syriac (phonetic)"
+    }, {
+        "name"              : "sy\tku",
+        "short_description" : "ku",
+        "description"       : "Kurdish (Syria, Latin Q)"
+    }, {
+        "name"              : "sy\tku_f",
+        "short_description" : "ku",
+        "description"       : "Kurdish (Syria, F)"
+    }, {
+        "name"              : "sy\tku_alt",
+        "short_description" : "ku",
+        "description"       : "Kurdish (Syria, Latin Alt-Q)"
+    }, {
+        "name"              : "tj",
+        "short_description" : "tg",
+        "description"       : "Tajik"
+    }, {
+        "name"              : "tj\tlegacy",
+        "short_description" : "",
+        "description"       : "Tajik (legacy)"
+    }, {
+        "name"              : "lk",
+        "short_description" : "si",
+        "description"       : "Sinhala (phonetic)"
+    }, {
+        "name"              : "lk\ttam_unicode",
+        "short_description" : "ta",
+        "description"       : "Tamil (Sri Lanka, Unicode)"
+    }, {
+        "name"              : "lk\ttam_TAB",
+        "short_description" : "",
+        "description"       : "Tamil (Sri Lanka, TAB Typewriter)"
+    }, {
+        "name"              : "th",
+        "short_description" : "th",
+        "description"       : "Thai"
+    }, {
+        "name"              : "th\ttis",
+        "short_description" : "",
+        "description"       : "Thai (TIS-820.2538)"
+    }, {
+        "name"              : "th\tpat",
+        "short_description" : "",
+        "description"       : "Thai (Pattachote)"
+    }, {
+        "name"              : "tr",
+        "short_description" : "tr",
+        "description"       : "Turkish"
+    }, {
+        "name"              : "tr\tf",
+        "short_description" : "",
+        "description"       : "Turkish (F)"
+    }, {
+        "name"              : "tr\talt",
+        "short_description" : "",
+        "description"       : "Turkish (Alt-Q)"
+    }, {
+        "name"              : "tr\tsundeadkeys",
+        "short_description" : "",
+        "description"       : "Turkish (Sun dead keys)"
+    }, {
+        "name"              : "tr\tku",
+        "short_description" : "ku",
+        "description"       : "Kurdish (Turkey, Latin Q)"
+    }, {
+        "name"              : "tr\tku_f",
+        "short_description" : "ku",
+        "description"       : "Kurdish (Turkey, F)"
+    }, {
+        "name"              : "tr\tku_alt",
+        "short_description" : "ku",
+        "description"       : "Kurdish (Turkey, Latin Alt-Q)"
+    }, {
+        "name"              : "tr\tintl",
+        "short_description" : "",
+        "description"       : "Turkish (international with dead keys)"
+    }, {
+        "name"              : "tr\tcrh",
+        "short_description" : "crh",
+        "description"       : "Crimean Tatar (Turkish Q)"
+    }, {
+        "name"              : "tr\tcrh_f",
+        "short_description" : "crh",
+        "description"       : "Crimean Tatar (Turkish F)"
+    }, {
+        "name"              : "tr\tcrh_alt",
+        "short_description" : "crh",
+        "description"       : "Crimean Tatar (Turkish Alt-Q)"
+    }, {
+        "name"              : "tw",
+        "short_description" : "zh",
+        "description"       : "Taiwanese"
+    }, {
+        "name"              : "tw\tindigenous",
+        "short_description" : "",
+        "description"       : "Taiwanese (indigenous)"
+    }, {
+        "name"              : "tw\tsaisiyat",
+        "short_description" : "xsy",
+        "description"       : "Saisiyat (Taiwan)"
+    }, {
+        "name"              : "ua",
+        "short_description" : "uk",
+        "description"       : "Ukrainian"
+    }, {
+        "name"              : "ua\tphonetic",
+        "short_description" : "",
+        "description"       : "Ukrainian (phonetic)"
+    }, {
+        "name"              : "ua\ttypewriter",
+        "short_description" : "",
+        "description"       : "Ukrainian (typewriter)"
+    }, {
+        "name"              : "ua\twinkeys",
+        "short_description" : "",
+        "description"       : "Ukrainian (WinKeys)"
+    }, {
+        "name"              : "ua\tlegacy",
+        "short_description" : "",
+        "description"       : "Ukrainian (legacy)"
+    }, {
+        "name"              : "ua\trstu",
+        "short_description" : "",
+        "description"       : "Ukrainian (standard RSTU)"
+    }, {
+        "name"              : "ua\trstu_ru",
+        "short_description" : "",
+        "description"       : "Russian (Ukraine, standard RSTU)"
+    }, {
+        "name"              : "ua\thomophonic",
+        "short_description" : "",
+        "description"       : "Ukrainian (homophonic)"
+    }, {
+        "name"              : "gb",
+        "short_description" : "en",
+        "description"       : "English (UK)"
+    }, {
+        "name"              : "gb\textd",
+        "short_description" : "",
+        "description"       : "English (UK, extended WinKeys)"
+    }, {
+        "name"              : "gb\tintl",
+        "short_description" : "",
+        "description"       : "English (UK, international with dead keys)"
+    }, {
+        "name"              : "gb\tdvorak",
+        "short_description" : "",
+        "description"       : "English (UK, Dvorak)"
+    }, {
+        "name"              : "gb\tdvorakukp",
+        "short_description" : "",
+        "description"       : "English (UK, Dvorak with UK punctuation)"
+    }, {
+        "name"              : "gb\tmac",
+        "short_description" : "",
+        "description"       : "English (UK, Macintosh)"
+    }, {
+        "name"              : "gb\tmac_intl",
+        "short_description" : "",
+        "description"       : "English (UK, Macintosh international)"
+    }, {
+        "name"              : "gb\tcolemak",
+        "short_description" : "",
+        "description"       : "English (UK, Colemak)"
+    }, {
+        "name"              : "uz",
+        "short_description" : "uz",
+        "description"       : "Uzbek"
+    }, {
+        "name"              : "uz\tlatin",
+        "short_description" : "",
+        "description"       : "Uzbek (Latin)"
+    }, {
+        "name"              : "vn",
+        "short_description" : "vi",
+        "description"       : "Vietnamese"
+    }, {
+        "name"              : "kr",
+        "short_description" : "ko",
+        "description"       : "Korean"
+    }, {
+        "name"              : "kr\tkr104",
+        "short_description" : "",
+        "description"       : "Korean (101/104 key compatible)"
+    }, {
+        "name"              : "nec_vndr/jp",
+        "short_description" : "ja",
+        "description"       : "Japanese (PC-98xx Series)"
+    }, {
+        "name"              : "ie",
+        "short_description" : "ie",
+        "description"       : "Irish"
+    }, {
+        "name"              : "ie\tCloGaelach",
+        "short_description" : "",
+        "description"       : "CloGaelach"
+    }, {
+        "name"              : "ie\tUnicodeExpert",
+        "short_description" : "",
+        "description"       : "Irish (UnicodeExpert)"
+    }, {
+        "name"              : "ie\togam",
+        "short_description" : "",
+        "description"       : "Ogham"
+    }, {
+        "name"              : "ie\togam_is434",
+        "short_description" : "",
+        "description"       : "Ogham (IS434)"
+    }, {
+        "name"              : "pk",
+        "short_description" : "ur",
+        "description"       : "Urdu (Pakistan)"
+    }, {
+        "name"              : "pk\turd-crulp",
+        "short_description" : "",
+        "description"       : "Urdu (Pakistan, CRULP)"
+    }, {
+        "name"              : "pk\turd-nla",
+        "short_description" : "",
+        "description"       : "Urdu (Pakistan, NLA)"
+    }, {
+        "name"              : "pk\tara",
+        "short_description" : "ar",
+        "description"       : "Arabic (Pakistan)"
+    }, {
+        "name"              : "pk\tsnd",
+        "short_description" : "sd",
+        "description"       : "Sindhi"
+    }, {
+        "name"              : "mv",
+        "short_description" : "dv",
+        "description"       : "Dhivehi"
+    }, {
+        "name"              : "za",
+        "short_description" : "en",
+        "description"       : "English (South Africa)"
+    }, {
+        "name"              : "epo",
+        "short_description" : "eo",
+        "description"       : "Esperanto"
+    }, {
+        "name"              : "epo\tlegacy",
+        "short_description" : "",
+        "description"       : "Esperanto (displaced semicolon and quote, obsolete)"
+    }, {
+        "name"              : "np",
+        "short_description" : "ne",
+        "description"       : "Nepali"
+    }, {
+        "name"              : "ng",
+        "short_description" : "en",
+        "description"       : "English (Nigeria)"
+    }, {
+        "name"              : "ng\tigbo",
+        "short_description" : "ig",
+        "description"       : "Igbo"
+    }, {
+        "name"              : "ng\tyoruba",
+        "short_description" : "yo",
+        "description"       : "Yoruba"
+    }, {
+        "name"              : "ng\thausa",
+        "short_description" : "ha",
+        "description"       : "Hausa"
+    }, {
+        "name"              : "et",
+        "short_description" : "am",
+        "description"       : "Amharic"
+    }, {
+        "name"              : "sn",
+        "short_description" : "wo",
+        "description"       : "Wolof"
+    }, {
+        "name"              : "brai",
+        "short_description" : "brl",
+        "description"       : "Braille"
+    }, {
+        "name"              : "brai\tleft_hand",
+        "short_description" : "",
+        "description"       : "Braille (left hand)"
+    }, {
+        "name"              : "brai\tright_hand",
+        "short_description" : "",
+        "description"       : "Braille (right hand)"
+    }, {
+        "name"              : "tm",
+        "short_description" : "tk",
+        "description"       : "Turkmen"
+    }, {
+        "name"              : "tm\talt",
+        "short_description" : "",
+        "description"       : "Turkmen (Alt-Q)"
+    }, {
+        "name"              : "ml",
+        "short_description" : "bm",
+        "description"       : "Bambara"
+    }, {
+        "name"              : "ml\tfr-oss",
+        "short_description" : "fr",
+        "description"       : "French (Mali, alternative)"
+    }, {
+        "name"              : "ml\tus-mac",
+        "short_description" : "en",
+        "description"       : "English (Mali, US Macintosh)"
+    }, {
+        "name"              : "ml\tus-intl",
+        "short_description" : "en",
+        "description"       : "English (Mali, US international)"
+    }, {
+        "name"              : "tz",
+        "short_description" : "sw",
+        "description"       : "Swahili (Tanzania)"
+    }, {
+        "name"              : "ke",
+        "short_description" : "sw",
+        "description"       : "Swahili (Kenya)"
+    }, {
+        "name"              : "ke\tkik",
+        "short_description" : "ki",
+        "description"       : "Kikuyu"
+    }, {
+        "name"              : "bw",
+        "short_description" : "tn",
+        "description"       : "Tswana"
+    }, {
+        "name"              : "ph",
+        "short_description" : "ph",
+        "description"       : "Filipino"
+    }, {
+        "name"              : "ph\tqwerty-bay",
+        "short_description" : "",
+        "description"       : "Filipino (QWERTY Baybayin)"
+    }, {
+        "name"              : "ph\tcapewell-dvorak",
+        "short_description" : "",
+        "description"       : "Filipino (Capewell-Dvorak Latin)"
+    }, {
+        "name"              : "ph\tcapewell-dvorak-bay",
+        "short_description" : "",
+        "description"       : "Filipino (Capewell-Dvorak Baybayin)"
+    }, {
+        "name"              : "ph\tcapewell-qwerf2k6",
+        "short_description" : "",
+        "description"       : "Filipino (Capewell-QWERF 2006 Latin)"
+    }, {
+        "name"              : "ph\tcapewell-qwerf2k6-bay",
+        "short_description" : "",
+        "description"       : "Filipino (Capewell-QWERF 2006 Baybayin)"
+    }, {
+        "name"              : "ph\tcolemak",
+        "short_description" : "",
+        "description"       : "Filipino (Colemak Latin)"
+    }, {
+        "name"              : "ph\tcolemak-bay",
+        "short_description" : "",
+        "description"       : "Filipino (Colemak Baybayin)"
+    }, {
+        "name"              : "ph\tdvorak",
+        "short_description" : "",
+        "description"       : "Filipino (Dvorak Latin)"
+    }, {
+        "name"              : "ph\tdvorak-bay",
+        "short_description" : "",
+        "description"       : "Filipino (Dvorak Baybayin)"
+    }, {
+        "name"              : "md",
+        "short_description" : "md",
+        "description"       : "Moldavian"
+    }, {
+        "name"              : "md\tgag",
+        "short_description" : "gag",
+        "description"       : "Moldavian (Gagauz)"
+    }
+]
