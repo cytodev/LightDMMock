@@ -1,0 +1,138 @@
+[
+    {
+        "display_name"   : "Alexander the Great",
+        "home_directory" : "/home/basileusalex",
+        "image"          : "/home/basileusalex/.face",
+        "language"       : "gr_GR",
+        "layout"         : null,
+        "logged_in"      : false,
+        "session"        : null,
+        "username"       : "basileusalex"
+    }, {
+        "display_name"   : "Napoleon Bonaparte",
+        "home_directory" : "/home/napoleonib",
+        "image"          : "/home/napoleonib/.face",
+        "language"       : "fr_FR",
+        "layout"         : null,
+        "logged_in"      : false,
+        "session"        : null,
+        "username"       : "napoleonib"
+    },{
+        "display_name"   : "Gaius Octavius",
+        "home_directory" : "/home/imperatoraugustus",
+        "image"          : "/home/imperatoraugustus/.face",
+        "language"       : "it_IT",
+        "layout"         : null,
+        "logged_in"      : false,
+        "session"        : null,
+        "username"       : "imperatoraugustus"
+    },{
+        "display_name"   : "Sir Winston Leonard Spencer-Churchill",
+        "home_directory" : "/home/honourablewinston",
+        "image"          : "/home/honourablewinston/.face",
+        "language"       : "en_GB",
+        "layout"         : null,
+        "logged_in"      : false,
+        "session"        : null,
+        "username"       : "honourablewinston"
+    },{
+        "display_name"   : "Peter Alekseyevich Romanov",
+        "home_directory" : "/home/peteralexeyevich",
+        "image"          : "/home/peteralexeyevich/.face",
+        "language"       : "ru_RU",
+        "layout"         : null,
+        "logged_in"      : false,
+        "session"        : null,
+        "username"       : "peteralexeyevich"
+    },{
+        "display_name"   : "John Fitzgerald Kennedy",
+        "home_directory" : "/home/jackkennedy",
+        "image"          : "/home/jackkennedy/.face",
+        "language"       : "en_US",
+        "layout"         : null,
+        "logged_in"      : false,
+        "session"        : null,
+        "username"       : "jackkennedy"
+    },{
+        "display_name"   : "Muhammed bin Murad",
+        "home_directory" : "/home/mehmedisani",
+        "image"          : "/home/mehmedisani/.face",
+        "language"       : "tr_TR",
+        "layout"         : null,
+        "logged_in"      : false,
+        "session"        : null,
+        "username"       : "mehmedisani"
+    },{
+        "display_name"   : "Gustavus Adolphus",
+        "home_directory" : "/home/gustav2",
+        "image"          : "/home/gustav2/.face",
+        "language"       : "sv_SE",
+        "layout"         : null,
+        "logged_in"      : false,
+        "session"        : null,
+        "username"       : "gustav2"
+    },{
+        "display_name"   : "Mao Zedong",
+        "home_directory" : "/home/chairmanzedong",
+        "image"          : "/home/chairmanzedong/.face",
+        "language"       : "tr_TR",
+        "layout"         : null,
+        "logged_in"      : false,
+        "session"        : null,
+        "username"       : "chairmanzedong"
+    },{
+        "display_name"   : "Erik Thorvaldsson",
+        "home_directory" : "/home/redthorvald",
+        "image"          : "/home/redthorvald/.face",
+        "language"       : "no_NO",
+        "layout"         : null,
+        "logged_in"      : false,
+        "session"        : null,
+        "username"       : "redthorvald"
+    },{
+        "display_name"   : "Cristoforo Colombo",
+        "home_directory" : "/home/cristocolombo",
+        "image"          : "/home/cristocolombo/.face",
+        "language"       : "it_IT",
+        "layout"         : null,
+        "logged_in"      : false,
+        "session"        : null,
+        "username"       : "cristocolombo"
+    },{
+        "display_name"   : "Willem van Oranje",
+        "home_directory" : "/home/silentwill",
+        "image"          : "/home/silentwill/.face",
+        "language"       : "nl_NL",
+        "layout"         : null,
+        "logged_in"      : false,
+        "session"        : null,
+        "username"       : "silentwill"
+    },{
+        "display_name"   : "Genghis Khan",
+        "home_directory" : "/home/khagantemujin",
+        "image"          : "/home/khagantemujin/.face",
+        "language"       : "mn_MN",
+        "layout"         : null,
+        "logged_in"      : false,
+        "session"        : null,
+        "username"       : "khagantemujin"
+    },{
+        "display_name"   : "Mikhail Sergeyevich Gorbachev",
+        "home_directory" : "/home/gorbachev",
+        "image"          : "/home/gorbachev/.face",
+        "language"       : "ru_RU",
+        "layout"         : null,
+        "logged_in"      : false,
+        "session"        : null,
+        "username"       : "gorbachev"
+    },{
+        "display_name"   : "Meiji",
+        "home_directory" : "/home/meijitaitei",
+        "image"          : "/home/meijitaitei/.face",
+        "language"       : "jp_JP",
+        "layout"         : null,
+        "logged_in"      : false,
+        "session"        : null,
+        "username"       : "meijitaitei"
+    }
+]
