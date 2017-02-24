@@ -184,7 +184,7 @@ LightDMMock.prototype.authenticate = function(username) {
     }
 
     this.authentication_user = username;
-    this.in_authentication = true;
+    this.in_authentication   = true;
 
     window.show_prompt("Password:", "password");
 };
@@ -205,7 +205,7 @@ LightDMMock.prototype.authenticate_as_guest = function() {
     }
 
     this.authentication_user = "guest";
-    this.in_authentication = true;
+    this.in_authentication   = true;
 };
 
 /**
