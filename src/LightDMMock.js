@@ -31,34 +31,38 @@
 function LightDMMock(autofill, timeout, autoGuest) {
     window.checkForUpdate("v1.0.0");
 
-    this.hostname            = null;
-    this.users               = null;
-    this.default_language    = null;
-    this.language            = null;
-    this.languages           = null;
-    this.default_layout      = null;
-    this.layouts             = null;
-    this.layout              = null;
-    this.sessions            = null;
-    this.num_users           = 0;
-    this.default_session     = null;
-    this.timed_login_user    = null;
-    this.timed_login_delay   = null;
+    // see <https://github.com/Antergos/web-greeter/blob/before-python/src/webkit2-extension.c#L1470-L1504>
+
     this.authentication_user = null;
-    this.in_authentication   = false;
-    this.is_authenticated    = false;
-    this.can_suspend         = false;
+    this.autologin_guest     = false;
+    this.autologin_timeout   = 0;
+    this.autologin_user      = null;
     this.can_hibernate       = false;
     this.can_restart         = false;
     this.can_shutdown        = false;
-    this.lock_hint           = false;
+    this.can_suspend         = false;
+    this.default_session     = null;
     this.has_guest_account   = false;
     this.hide_users          = false;
-    this.select_user         = null;
-    this.select_guest        = false;
-    this.autologin_user      = null;
-    this.autologin_guest     = false;
-    this.autologin_timeout   = 0;
+    this.hostname            = null;
+    this.in_authentication   = false;
+    this.is_authenticated    = false;
+    this.language            = null;
+    this.languages           = null;
+    this.layout              = null;
+    this.layouts             = null;
+    this.lock_hint           = false;
+    this.num_users           = 0;
+    this.select_guest_hint   = null;
+    this.select_user_hint    = null;
+    this.sessions            = null;
+    this.users               = null;
+    this.default_language    = null; // Deprecated
+    this.default_layout      = null; // Deprecated
+    this.select_guest        = null; // Deprecated
+    this.select_user         = null; // Deprecated
+    this.timed_login_delay   = null; // Deprecated
+    this.timed_login_user    = null; // Deprecated
 
     if(typeof autofill === "boolean" && autofill) {
         this.users           = JSON.parse(atob("W3siZGlzcGxheV9uYW1lIjoiQWxleGFuZGVyIHRoZSBHcmVhdCIsImxhbmd1YWdlIjoiZ3JfR1IiLCJyZWFsX25hbWUiOiJCYXNpbGV1cyIsImxheW91dCI6bnVsbCwiaW1hZ2UiOiJtb2NrL2Jhc2lsZXVzYWxleC8uZmFjZSIsImhvbWVfZGlyZWN0b3J5IjoibW9jay9iYXNpbGV1c2FsZXgiLCJuYW1lIjoiYmFzaWxldXNhbGV4IiwibG9nZ2VkX2luIjpmYWxzZSwic2Vzc2lvbiI6bnVsbH0seyJkaXNwbGF5X25hbWUiOiJOYXBvbGVvbiBCb25hcGFydGUiLCJsYW5ndWFnZSI6ImZyX0ZSIiwicmVhbF9uYW1lIjoiTmFwb2xlb24gQm9uYXBhcnRlIiwibGF5b3V0IjpudWxsLCJpbWFnZSI6Im1vY2svbmFwb2xlb25pYi8uZmFjZSIsImhvbWVfZGlyZWN0b3J5IjoibW9jay9uYXBvbGVvbmliIiwibmFtZSI6Im5hcG9sZW9uaWIiLCJsb2dnZWRfaW4iOmZhbHNlLCJzZXNzaW9uIjpudWxsfSx7ImRpc3BsYXlfbmFtZSI6IkdhaXVzIE9jdGF2aXVzIiwibGFuZ3VhZ2UiOiJpdF9JVCIsInJlYWxfbmFtZSI6IkdhaXVzIE9jdGF2aXVzIiwibGF5b3V0IjpudWxsLCJpbWFnZSI6Im1vY2svaW1wZXJhdG9yYXVndXN0dXMvLmZhY2UiLCJob21lX2RpcmVjdG9yeSI6Im1vY2svaW1wZXJhdG9yYXVndXN0dXMiLCJuYW1lIjoiaW1wZXJhdG9yYXVndXN0dXMiLCJsb2dnZWRfaW4iOmZhbHNlLCJzZXNzaW9uIjpudWxsfSx7ImRpc3BsYXlfbmFtZSI6IlNpciBXaW5zdG9uIExlb25hcmQgU3BlbmNlci1DaHVyY2hpbGwiLCJsYW5ndWFnZSI6ImVuX0dCIiwicmVhbF9uYW1lIjoiU2lyIFdpbnN0b24gTGVvbmFyZCBTcGVuY2VyLUNodXJjaGlsbCIsImxheW91dCI6bnVsbCwiaW1hZ2UiOiJtb2NrL2hvbm91cmFibGV3aW5zdG9uLy5mYWNlIiwiaG9tZV9kaXJlY3RvcnkiOiJtb2NrL2hvbm91cmFibGV3aW5zdG9uIiwibmFtZSI6Imhvbm91cmFibGV3aW5zdG9uIiwibG9nZ2VkX2luIjpmYWxzZSwic2Vzc2lvbiI6bnVsbH0seyJkaXNwbGF5X25hbWUiOiJQZXRlciBBbGVrc2V5ZXZpY2ggUm9tYW5vdiIsImxhbmd1YWdlIjoicnVfUlUiLCJyZWFsX25hbWUiOiJQZXRlciBBbGVrc2V5ZXZpY2ggUm9tYW5vdiIsImxheW91dCI6bnVsbCwiaW1hZ2UiOiJtb2NrL3BldGVyYWxleGV5ZXZpY2gvLmZhY2UiLCJob21lX2RpcmVjdG9yeSI6Im1vY2svcGV0ZXJhbGV4ZXlldmljaCIsIm5hbWUiOiJwZXRlcmFsZXhleWV2aWNoIiwibG9nZ2VkX2luIjpmYWxzZSwic2Vzc2lvbiI6bnVsbH0seyJkaXNwbGF5X25hbWUiOiJKb2huIEZpdHpnZXJhbGQgS2VubmVkeSIsImxhbmd1YWdlIjoiZW5fVVMiLCJyZWFsX25hbWUiOiJKb2huIEZpdHpnZXJhbGQgS2VubmVkeSIsImxheW91dCI6bnVsbCwiaW1hZ2UiOiJtb2NrL2phY2trZW5uZWR5Ly5mYWNlIiwiaG9tZV9kaXJlY3RvcnkiOiJtb2NrL2phY2trZW5uZWR5IiwibmFtZSI6ImphY2trZW5uZWR5IiwibG9nZ2VkX2luIjpmYWxzZSwic2Vzc2lvbiI6bnVsbH0seyJkaXNwbGF5X25hbWUiOiJNdWhhbW1lZCBiaW4gTXVyYWQiLCJsYW5ndWFnZSI6InRyX1RSIiwicmVhbF9uYW1lIjoiTXVoYW1tZWQgYmluIE11cmFkIiwibGF5b3V0IjpudWxsLCJpbWFnZSI6Im1vY2svbWVobWVkaXNhbmkvLmZhY2UiLCJob21lX2RpcmVjdG9yeSI6Im1vY2svbWVobWVkaXNhbmkiLCJuYW1lIjoibWVobWVkaXNhbmkiLCJsb2dnZWRfaW4iOmZhbHNlLCJzZXNzaW9uIjpudWxsfSx7ImRpc3BsYXlfbmFtZSI6Ikd1c3RhdnVzIEFkb2xwaHVzIiwibGFuZ3VhZ2UiOiJzdl9TRSIsInJlYWxfbmFtZSI6Ikd1c3RhdnVzIEFkb2xwaHVzIiwibGF5b3V0IjpudWxsLCJpbWFnZSI6Im1vY2svZ3VzdGF2Mi8uZmFjZSIsImhvbWVfZGlyZWN0b3J5IjoibW9jay9ndXN0YXYyIiwibmFtZSI6Imd1c3RhdjIiLCJsb2dnZWRfaW4iOmZhbHNlLCJzZXNzaW9uIjpudWxsfSx7ImRpc3BsYXlfbmFtZSI6Ik1hbyBaZWRvbmciLCJsYW5ndWFnZSI6InRyX1RSIiwicmVhbF9uYW1lIjoiTWFvIFplZG9uZyIsImxheW91dCI6bnVsbCwiaW1hZ2UiOiJtb2NrL2NoYWlybWFuemVkb25nLy5mYWNlIiwiaG9tZV9kaXJlY3RvcnkiOiJtb2NrL2NoYWlybWFuemVkb25nIiwibmFtZSI6ImNoYWlybWFuemVkb25nIiwibG9nZ2VkX2luIjpmYWxzZSwic2Vzc2lvbiI6bnVsbH0seyJkaXNwbGF5X25hbWUiOiJFcmlrIFRob3J2YWxkc3NvbiIsImxhbmd1YWdlIjoibm9fTk8iLCJyZWFsX25hbWUiOiJFcmlrIFRob3J2YWxkc3NvbiIsImxheW91dCI6bnVsbCwiaW1hZ2UiOiJtb2NrL3JlZHRob3J2YWxkLy5mYWNlIiwiaG9tZV9kaXJlY3RvcnkiOiJtb2NrL3JlZHRob3J2YWxkIiwibmFtZSI6InJlZHRob3J2YWxkIiwibG9nZ2VkX2luIjpmYWxzZSwic2Vzc2lvbiI6bnVsbH0seyJkaXNwbGF5X25hbWUiOiJDcmlzdG9mb3JvIENvbG9tYm8iLCJsYW5ndWFnZSI6Iml0X0lUIiwicmVhbF9uYW1lIjoiQ3Jpc3RvZm9ybyBDb2xvbWJvIiwibGF5b3V0IjpudWxsLCJpbWFnZSI6Im1vY2svY3Jpc3RvY29sb21iby8uZmFjZSIsImhvbWVfZGlyZWN0b3J5IjoibW9jay9jcmlzdG9jb2xvbWJvIiwibmFtZSI6ImNyaXN0b2NvbG9tYm8iLCJsb2dnZWRfaW4iOmZhbHNlLCJzZXNzaW9uIjpudWxsfSx7ImRpc3BsYXlfbmFtZSI6IldpbGxlbSB2YW4gT3JhbmplIiwibGFuZ3VhZ2UiOiJubF9OTCIsInJlYWxfbmFtZSI6IldpbGxlbSB2YW4gT3JhbmplIiwibGF5b3V0IjpudWxsLCJpbWFnZSI6Im1vY2svc2lsZW50d2lsbC8uZmFjZSIsImhvbWVfZGlyZWN0b3J5IjoibW9jay9zaWxlbnR3aWxsIiwibmFtZSI6InNpbGVudHdpbGwiLCJsb2dnZWRfaW4iOmZhbHNlLCJzZXNzaW9uIjpudWxsfSx7ImRpc3BsYXlfbmFtZSI6IkdlbmdoaXMgS2hhbiIsImxhbmd1YWdlIjoibW5fTU4iLCJyZWFsX25hbWUiOiJHZW5naGlzIEtoYW4iLCJsYXlvdXQiOm51bGwsImltYWdlIjoibW9jay9raGFnYW50ZW11amluLy5mYWNlIiwiaG9tZV9kaXJlY3RvcnkiOiJtb2NrL2toYWdhbnRlbXVqaW4iLCJuYW1lIjoia2hhZ2FudGVtdWppbiIsImxvZ2dlZF9pbiI6ZmFsc2UsInNlc3Npb24iOm51bGx9LHsiZGlzcGxheV9uYW1lIjoiTWlraGFpbCBTZXJnZXlldmljaCBHb3JiYWNoZXYiLCJsYW5ndWFnZSI6InJ1X1JVIiwicmVhbF9uYW1lIjoiTWlraGFpbCBTZXJnZXlldmljaCBHb3JiYWNoZXYiLCJsYXlvdXQiOm51bGwsImltYWdlIjoibW9jay9nb3JiYWNoZXYvLmZhY2UiLCJob21lX2RpcmVjdG9yeSI6Im1vY2svZ29yYmFjaGV2IiwibmFtZSI6ImdvcmJhY2hldiIsImxvZ2dlZF9pbiI6ZmFsc2UsInNlc3Npb24iOm51bGx9LHsiZGlzcGxheV9uYW1lIjoiTWVpamkiLCJsYW5ndWFnZSI6ImpwX0pQIiwicmVhbF9uYW1lIjoiTWVpamkiLCJsYXlvdXQiOm51bGwsImltYWdlIjoibW9jay9tZWlqaXRhaXRlaS8uZmFjZSIsImhvbWVfZGlyZWN0b3J5IjoibW9jay9tZWlqaXRhaXRlaSIsIm5hbWUiOiJtZWlqaXRhaXRlaSIsImxvZ2dlZF9pbiI6ZmFsc2UsInNlc3Npb24iOm51bGx9XQ=="));
@@ -561,6 +565,14 @@ LightDMMock.watch('default_language', function() {
 
 LightDMMock.watch('default_layout', function() {
     window.deprecationNotifier("property", "default_layout", "lightdm.layout");
+});
+
+LightDMMock.watch('select_guest', function() {
+    window.deprecationNotifier("property", "select_guest", "lightdm.select_guest_hint");
+});
+
+LightDMMock.watch('select_user', function() {
+    window.deprecationNotifier("property", "select_user", "lightdm.select_user_hint");
 });
 
 LightDMMock.watch('timed_login_user', function() {
