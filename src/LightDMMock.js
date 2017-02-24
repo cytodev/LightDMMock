@@ -156,6 +156,7 @@ function LightDMMock(autofill, timeout, autoGuest) {
  *                                   Methods                                  *
  ******************************************************************************/
 
+// see <https://github.com/Antergos/web-greeter/blob/before-python/src/webkit2-extension.c#L1511-L1530>
 
 /**
  * Specifies the username of the user we'd like to start authenticating as.
