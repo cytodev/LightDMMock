@@ -1,5 +1,5 @@
 #LightDMMock
-A LightDM Mock that is tightly based on the source C code of [Antergos](https://github.com/Antergos)' [lightdm-webkit2-greeter](https://github.com/Antergos/lightdm-webkit2-greeter). <font style="color:red">Please note that the deprecation errors are intrusive for a reason.</font>
+A LightDM Mock that is tightly based on the source [C code](https://github.com/Antergos/web-greeter/blob/before-python/src/webkit2-extension.c) of [Antergos](https://github.com/Antergos)' [lightdm-webkit2-greeter](https://github.com/Antergos/lightdm-webkit2-greeter). <font style="color:red">Please note that the deprecation errors are intrusive for a reason.</font>
 
 ##Usage:
  [1]. Clone the repo
