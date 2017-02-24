@@ -15,6 +15,9 @@
  *         var LightDMMock = LightDMMock || {};
  *         window.lightdm = new LightDMMock(autofill, timeout, autoGuest);
  *     }
+ *   If you want to use the .face images don't forget to add the path to
+ *   LightDMMock/src to the image src. The users.json file has absolute paths
+ *   like you would expect on a real filesystem.
  *
  * @param {boolean} autofill  [wether or not the arrays for users, languages,
  *                             layouts, and sessions need to be filled with mock
