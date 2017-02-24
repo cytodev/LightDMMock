@@ -32,7 +32,7 @@
 "use strict";
 
 function LightDMMock(autofill, timeout, autoGuest) {
-    window.checkForUpdate("v1.0.0");
+    window.checkForUpdate("v1.1.0");
 
     // see <https://github.com/Antergos/web-greeter/blob/before-python/src/webkit2-extension.c#L1470-L1504>
 
