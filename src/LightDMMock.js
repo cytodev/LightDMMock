@@ -181,6 +181,57 @@ LightDMMock.prototype.authenticate_as_guest = function() {
 };
 
 /**
+ * Cancels the authentication of any user currently in the
+ * process of authenticating.
+ */
+LightDMMock.prototype.cancel_authentication = function() {
+    window.logCall("cancel_authentication", arguments);
+    window.checkArguments(arguments, 0, []);
+
+    this.authentication_user = null;
+    this.in_authentication   = false;
+};
+
+/**
+ * Cancels the authentication of the autologin user. The older function
+ * lightdm.cancel_timed_login() has been deprecated.
+ */
+LightDMMock.prototype.cancel_autologin = function() {
+    window.logCall("cancel_autologin", arguments);
+    window.checkArguments(arguments, 0, []);
+
+    this.autologin_user    = null;
+    this.autologin_guest   = false;
+    this.autologin_timeout = 0;
+};
+
+/**
+ * Returns the value of a named hint provided by LightDM.
+ *
+ * @param  {String} hint_name [name of the hint to show]
+ */
+LightDMMock.prototype.get_hint = function(hint_name) {
+    window.logCall("get_hint", arguments);
+    window.checkArguments(arguments, 1, ["string"]);
+
+    // @fixme: I have no clue how to simulate this...
+};
+
+/**
+ * Hibernates the system, if the greeter has the authority to do so.
+ */
+LightDMMock.prototype.hibernate = function() {
+    window.logCall("hibernate", arguments);
+    window.checkArguments(arguments, 0, []);
+
+    if(!this.can_hibernate)
+        throw new IlligalUsageException("LightDM cannot hibernate the system. Make sure you check the value of 'lightdm.can_hibernate' before calling this function.");
+
+    window.alert("System hibernated.");
+    document.location.reload(true);
+};
+
+/**
  * When LightDM has prompted for input, provide the response to LightDM. The
  * deprecated function was "provide_secret". This is still available for
  * backwards compatibility, but authors of greeters should move
@@ -201,68 +252,6 @@ LightDMMock.prototype.respond = function(text) {
     } else {
         window.show_message("Invalid password", "error");
     }
-};
-
-/**
- * Deprecated method.
- */
-LightDMMock.prototype.provide_secret = function() {
-    window.logCall("provide_secret", arguments);
-    window.deprecationNotifier("method", "lightdm.provide_secret(text)", "lightdm.respond(text)");
-};
-
-/**
- * Cancels the authentication of any user currently in the
- * process of authenticating.
- */
-LightDMMock.prototype.cancel_authentication = function() {
-    window.logCall("cancel_authentication", arguments);
-    window.checkArguments(arguments, 0, []);
-
-    this.authentication_user = null;
-    this.in_authentication   = false;
-};
-
-/**
- * Suspends the system, if the greeter has the authority to do so.
- */
-LightDMMock.prototype.suspend = function() {
-    window.logCall("suspend", arguments);
-    window.checkArguments(arguments, 0, []);
-
-    if(!this.can_suspend)
-        throw new IlligalUsageException("LightDM cannot suspend the system. Make sure you check the value of 'lightdm.can_suspend' before calling this function.");
-
-    window.alert("System suspended.");
-    document.location.reload(true);
-};
-
-/**
- * Hibernates the system, if the greeter has the authority to do so.
- */
-LightDMMock.prototype.hibernate = function() {
-    window.logCall("hibernate", arguments);
-    window.checkArguments(arguments, 0, []);
-
-    if(!this.can_hibernate)
-        throw new IlligalUsageException("LightDM cannot hibernate the system. Make sure you check the value of 'lightdm.can_hibernate' before calling this function.");
-
-    window.alert("System hibernated.");
-    document.location.reload(true);
-};
-
-/**
- * Shuts down the system, if the greeter has the authority to do so.
- */
-LightDMMock.prototype.shutdown = function() {
-    window.logCall("shutdown", arguments);
-    window.checkArguments(arguments, 0, []);
-
-    if(!this.can_shutdown)
-        throw new IlligalUsageException("LightDM cannot shut down the system. Make sure you check the value of 'lightdm.can_shutdown' before calling this function.");
-
-    window.alert("System shut down.");
-    document.location.reload(true);
 };
 
 /**
@@ -292,11 +281,17 @@ LightDMMock.prototype.set_language = function(lang) {
 };
 
 /**
- * Deprecated method.
+ * Shuts down the system, if the greeter has the authority to do so.
  */
-LightDMMock.prototype.login = function() {
-    window.logCall("login", arguments);
-    window.deprecationNotifier("method", "lightdm.login()", "lightdm.start_session_sync(session)");
+LightDMMock.prototype.shutdown = function() {
+    window.logCall("shutdown", arguments);
+    window.checkArguments(arguments, 0, []);
+
+    if(!this.can_shutdown)
+        throw new IlligalUsageException("LightDM cannot shut down the system. Make sure you check the value of 'lightdm.can_shutdown' before calling this function.");
+
+    window.alert("System shut down.");
+    document.location.reload(true);
 };
 
 /**
@@ -308,7 +303,7 @@ LightDMMock.prototype.login = function() {
  *
  * @param  {String} session [the session name to start]
  */
-LightDMMock.prototype.start_session_sync = function(session) {
+LightDMMock.prototype.start_session = function(session) {
     window.logCall("start_session_sync", arguments);
     window.checkArguments(arguments, 1, ["string"]);
 
@@ -323,15 +318,17 @@ LightDMMock.prototype.start_session_sync = function(session) {
 };
 
 /**
- * Returns the value of a named hint provided by LightDM.
- *
- * @param  {String} hint_name [name of the hint to show]
+ * Suspends the system, if the greeter has the authority to do so.
  */
-LightDMMock.prototype.get_hint = function(hint_name) {
-    window.logCall("get_hint", arguments);
-    window.checkArguments(arguments, 1, ["string"]);
+LightDMMock.prototype.suspend = function() {
+    window.logCall("suspend", arguments);
+    window.checkArguments(arguments, 0, []);
 
-    // @fixme: I have no clue how to simulate this...
+    if(!this.can_suspend)
+        throw new IlligalUsageException("LightDM cannot suspend the system. Make sure you check the value of 'lightdm.can_suspend' before calling this function.");
+
+    window.alert("System suspended.");
+    document.location.reload(true);
 };
 
 
