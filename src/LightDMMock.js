@@ -333,8 +333,38 @@ LightDMMock.prototype.suspend = function() {
 
 
 /******************************************************************************
- *                                 Throwables                                 *
+ *                                 Deprecated                                 *
 *******************************************************************************/
+
+LightDMMock.prototype.cancel_timed_login = function() {
+    window.logCall("cancel_timed_login", arguments);
+    window.deprecationNotifier("method", "lightdm.cancel_timed_login()", "lightdm.cancel_autologin()");
+};
+
+LightDMMock.prototype.start_authentication = function() {
+    window.logCall("start_authentication", arguments);
+    window.deprecationNotifier("method", "lightdm.start_authentication()", "lightdm.authenticate(username)");
+};
+
+LightDMMock.prototype.login = function() {
+    window.logCall("login", arguments);
+    window.deprecationNotifier("method", "lightdm.login()", "lightdm.start_session(session)");
+};
+
+LightDMMock.prototype.provide_secret = function() {
+    window.logCall("provide_secret", arguments);
+    window.deprecationNotifier("method", "lightdm.provide_secret(text)", "lightdm.respond(text)");
+};
+
+LightDMMock.prototype.start_session_sync = function() {
+    window.logCall("login", arguments);
+    window.deprecationNotifier("method", "lightdm.start_session_sync(session)", "lightdm.start_session(session)");
+};
+
+
+/******************************************************************************
+ *                                 Throwables                                 *
+ ******************************************************************************/
 
 /**
  * Throwable IlligalUsageException
