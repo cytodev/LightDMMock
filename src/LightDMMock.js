@@ -676,6 +676,14 @@ LightDMMock.watch('timed_login_delay', function() {
     window.deprecationNotifier("property", "timed_login_delay", "lightdm.autologin_timeout");
 });
 
-if (module) {
+
+/******************************************************************************
+ *                               Module loading                               *
+ ******************************************************************************/
+
+/* jshint node : true  */
+
+if(typeof module !== "undefined" && module.exports)
     module.exports = LightDMMock;
-}
+
+/* jshint node : false  */
