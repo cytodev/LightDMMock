@@ -1,7 +1,7 @@
-#LightDMMock
+# LightDMMock
 A LightDM Mock that is tightly based on the source [C code](https://github.com/Antergos/web-greeter/blob/before-python/src/webkit2-extension.c) of [Antergos](https://github.com/Antergos)' [lightdm-webkit2-greeter](https://github.com/Antergos/lightdm-webkit2-greeter). <font style="color:red">Please note that the deprecation errors are intrusive for a reason.</font>
 
-##Usage:
+## Usage:
  [1]. Clone the repo
 ````bash
 git clone git@github.com:CytoDev/LightDMMock.git
@@ -18,26 +18,26 @@ if(!("lightdm" in window)) {
 }
 ````
 
-##Note:
+## Note:
 If you plan on using the `.face` files in the mock you have to include the path to `LightDMMock/src`. The `.face` files linked in `users.json` are absolute links to `/home/[username]/.face`.
 
-##Parameters of LightDMMock()
-####autofill
+## Parameters of LightDMMock()
+#### autofill
 > **_`boolean`_**<br>
 > Wether or not the arrays for users, languages, layouts, and sessions need to be filled with mock data. I advise to test both to make your theme less prone to crashing.
  ---
 
-####timeout
+#### timeout
 > **_`number`_**<br>
 > Value to use for simulated autologin (this value is in seconds).
  ---
 
-####autoGuest
+#### autoGuest
 > **_`boolean`_**<br>
 > Wether or not to simulate automatic guest login. This will also enable a guest account in `lightdm.has_guest_account`.
  ---
 
-###A friendly reminder
+### A friendly reminder
 The following functions __must__ be provided by the custom greeter, which LightDM will call in the process of authenticating the user. This can be found in the original documentation (man pages) of the webkit-greeter, but I have posted them here for your convenience.
 
 > __show\_prompt(text, type)__<br>
@@ -68,8 +68,8 @@ The following functions __must__ be provided by the custom greeter, which LightD
 > expired. The greeter should reset the authentication process.
 > ````
 
-###License:
+### License:
 This project is licensed under the MIT License. You can find a copy of the license [here](https://github.com/CytoDev/LightDMMock/license.md).
 
-###Contributions:
+### Contributions:
 You are more than welcome to submit issues as well as feature requests or just a 'how-ya-doin' in the [issue tracker](https://github.com/CytoDev/LightDMMock/issues/new). Contributing to the project can be done by forking it and submitting a pull request once it's all tested and tidy.
